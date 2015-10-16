@@ -1,0 +1,92 @@
+/*********************************
+GENERAL
+*********************************/
+body {
+    background-color: #F5F5F5;
+    border-bottom: 2px solid black;
+    font-family: serif, sans-serif, Verdana, "Courier New", Arial, fantasy, monospace;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+
+/**********************************
+NAME (div)
+**********************************/
+
+.name {
+    background: white;
+    width: 408px;
+    margin: auto;
+    margin-bottom: 35px;
+    padding: 50px;
+    box-shadow: 0 0 0 2px #D3D3D3;
+}
+
+h1 {
+    text-align: center;
+    font-family: serif, sans-serif, monospace, fantasy, cursive;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.name p {
+    text-align: left;
+    border-bottom: 1px solid black;
+    text-indent: 10px;
+    padding-bottom: 10px;
+}
+
+.image {
+    width: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    margin-bottom: -5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+
+/**********************************
+INTEREST
+**********************************/
+
+.interest ul {
+    text-indent: -30px;
+    border-bottom: 1px solid black;
+}
+
+li {
+    padding: 10px;
+    text-indent: 10px;
+}
+
+
+
+/**********************************
+CONTACT
+**********************************/
+
+.contact ul {
+    list-style-type: none;
+    text-indent: -30px;
+    border-bottom: 1px solid black;
+}
+
+
+
+/**********************************
+ADD INFO
+**********************************/
+
+.add-info p {
+    text-align: left;
+    border-bottom: 0;
+}
