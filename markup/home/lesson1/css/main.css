@@ -42,7 +42,6 @@ img {
     width: 100px;
     display: block;
     margin: 0 auto;
-    margin-bottom: -5px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -67,10 +66,10 @@ INTEREST
     content: '\2022';
 }
 
-.interest {
+/* .interest {
     position: relative;    
 }
-
+ */
 ::before {
     position: relative;
     left: -10px;
