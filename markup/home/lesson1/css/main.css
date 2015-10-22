@@ -66,10 +66,6 @@ INTEREST
     content: '\2022';
 }
 
-/* .interest {
-    position: relative;    
-}
- */
 ::before {
     position: relative;
     left: -10px;
