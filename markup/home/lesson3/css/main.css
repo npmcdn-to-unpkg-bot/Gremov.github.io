@@ -1,0 +1,173 @@
+/*********************************
+GENERAL
+*********************************/
+
+body {
+    background-color: #F5F5F5;
+    box-shadow: inset 0 0 5px 2px rgba(211,211,211,1);
+}
+
+.wrapper {
+    background-color: white;
+    width: 1060px;
+    height: 950px;
+    box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.3);
+    margin: 0 152px 0 154px;
+}
+/*********************************
+HEADER
+*********************************/
+
+.fitnesslogo {
+    padding-top: 45px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.menu {
+    background: -webkit-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+    background: -moz-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+    background: -o-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+    background: -ms-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+    background: linear-gradient(0deg, #444343 0%, #5e5e5e 100%);
+    width: 966px;
+    height: 40px;
+    line-height: 40px;
+    margin: 50px;
+}
+
+.menu li {
+    display: inline-block;
+    width: 100px;
+    padding-left: 20px;
+    font: 400 15px OpenSans, sans-serif;
+    text-align: justify;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.products {
+    display: inline-block;
+/*     position: relative;
+    top: -11px;
+    left: -11px; */
+    height: 40px;
+    line-height: 40px;
+/*     background: -webkit-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
+    background: -moz-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
+    background: -o-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
+    background: -ms-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
+    background: linear-gradient(0deg, #2e2e2e 0%, #4a4a4a 100%); */
+    width: 100px;
+    border-left: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*********************************
+Left-Menu
+*********************************/
+
+.left-menu {
+    background: #ffffff;
+    border: 1px solid #c8c8c8;
+    width: 240px;
+    height: 240px;
+    margin-left: 50px;
+    float: left;
+}
+
+.left-menu li {
+    font: 400 13px OpenSans, sans-serif;
+    text-decoration: none;
+    color: #656363;
+    padding-left: 20px;
+    line-height: 40px;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.phones {
+    background: #f9f9f9;
+    text-indent: 13px;
+}
+
+#auto {
+    border-bottom: none;
+}
+
+.left-menu a {
+    text-decoration: none;
+    color: #656363;
+}
+
+.phones a {
+    color: #2c2b2b;
+}
+
+
+/*********************************
+CONTAINER
+*********************************/
+
+.container {
+    background: #ffffff;
+    margin-left: 331px;
+    border: 1px solid #c8c8c8;
+    width: 678px;
+    height: 400px;
+}
+
+.container img {
+    padding: 47px 89px;
+}
+
+.container p {
+    display: block;
+    width: 625px;
+    height: 141px;
+    font: 400 13px OpenSans, sans-serif;
+    color: #2c2b2b;
+    text-align: left;
+    margin: 39px;
+}
+
+
+
+/*********************************
+FOOTER
+*********************************/
+
+.footer {
+    background-color: #e1e1e1;
+    height: 40px;
+    line-height: 40px;
+    margin: 200px 46px;
+    
+}
+
+.footer ul li {
+    display: inline-block;
+    width: 105px;
+    padding-left: 20px;
+    font: 400 13px OpenSans, sans-serif;
+}
+
+.footer p {
+    position: relative;
+    top: -25px;
+    padding-right: 20px;
+    font: 400 13px OpenSans, sans-serif;
+    text-align: right
+}
+
+.footer a {
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+.products2 {
+    text-decoration: underline;
+}
