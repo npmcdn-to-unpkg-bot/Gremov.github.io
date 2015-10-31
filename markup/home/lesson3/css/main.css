@@ -4,24 +4,23 @@ GENERAL
 
 body {
     background-color: #F5F5F5;
-    box-shadow: inset 0 0 5px 2px rgba(211,211,211,1);
 }
 
 .wrapper {
-    background-color: white;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 50px 48px 60px 46px;
     width: 1060px;
-    height: 950px;
     box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.3);
-    margin: 0 152px 0 154px;
+    
 }
 /*********************************
 HEADER
 *********************************/
 
 .fitnesslogo {
-    padding-top: 45px;
-    padding-left: 50px;
-    text-align: left;
+    width: 146px;
+    height: 40px;
 }
 
 .menu {
@@ -30,34 +29,31 @@ HEADER
     background: -o-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
     background: -ms-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
     background: linear-gradient(0deg, #444343 0%, #5e5e5e 100%);
-    width: 966px;
+    margin: 40px 0;
+    width: auto;
     height: 40px;
-    line-height: 40px;
-    margin: 50px;
+    font: 400 15px OpenSans, sans-serif;
 }
 
 .menu li {
     display: inline-block;
-    width: 100px;
+    line-height: 40px;
     padding-left: 20px;
-    font: 400 15px OpenSans, sans-serif;
-    text-align: justify;
+    padding-right: 45px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-.products {
-    display: inline-block;
-/*     position: relative;
-    top: -11px;
-    left: -11px; */
-    height: 40px;
-    line-height: 40px;
-/*     background: -webkit-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
+.products a:hover {
+    display: block;
+    background: -webkit-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
     background: -moz-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
     background: -o-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
     background: -ms-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
-    background: linear-gradient(0deg, #2e2e2e 0%, #4a4a4a 100%); */
-    width: 100px;
+    background: linear-gradient(0deg, #2e2e2e 0%, #4a4a4a 100%);
+    width: auto;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-left: 1px solid rgb(255, 255, 255);
     border-right: 1px solid rgb(255, 255, 255);
 }
@@ -68,15 +64,15 @@ HEADER
 }
 
 /*********************************
-Left-Menu
+CONTENT
 *********************************/
+
 
 .left-menu {
     background: #ffffff;
     border: 1px solid #c8c8c8;
     width: 240px;
     height: 240px;
-    margin-left: 50px;
     float: left;
 }
 
@@ -89,11 +85,6 @@ Left-Menu
     border-bottom: 1px solid #c8c8c8;
 }
 
-.phones {
-    background: #f9f9f9;
-    text-indent: 13px;
-}
-
 #auto {
     border-bottom: none;
 }
@@ -103,38 +94,37 @@ Left-Menu
     color: #656363;
 }
 
-.phones a {
+.phones a:hover {
+    background: #f9f9f9;
     color: #2c2b2b;
+    height: 39px;
+    display: block;
+    padding-left: 20px;
 }
-
-
-/*********************************
-CONTAINER
-*********************************/
 
 .container {
-    background: #ffffff;
-    margin-left: 331px;
-    border: 1px solid #c8c8c8;
-    width: 678px;
-    height: 400px;
+    float: right;
 }
 
-.container img {
-    padding: 47px 89px;
+.image {
+    background: #ffffff;
+    padding: 89px 46px;
+    border: 1px solid #c8c8c8;
+    text-align: center;
 }
 
 .container p {
-    display: block;
     width: 625px;
-    height: 141px;
     font: 400 13px OpenSans, sans-serif;
     color: #2c2b2b;
-    text-align: left;
-    margin: 39px;
+    margin: 39px 77px 60px 24px;
 }
 
-
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
 
 /*********************************
 FOOTER
@@ -143,24 +133,22 @@ FOOTER
 .footer {
     background-color: #e1e1e1;
     height: 40px;
-    line-height: 40px;
-    margin: 200px 46px;
-    
+    width: auto;
+    font: 400 13px OpenSans, sans-serif;
 }
 
-.footer ul li {
-    display: inline-block;
-    width: 105px;
-    padding-left: 20px;
-    font: 400 13px OpenSans, sans-serif;
+.footer li {
+    display: block;
+    width: auto;
+    line-height: 40px;
+    padding-left: 50px;
+    float: left;
 }
 
 .footer p {
-    position: relative;
-    top: -25px;
     padding-right: 20px;
-    font: 400 13px OpenSans, sans-serif;
-    text-align: right
+    line-height: 40px;
+    float: right;
 }
 
 .footer a {
@@ -170,4 +158,10 @@ FOOTER
 
 .products2 {
     text-decoration: underline;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
 }
