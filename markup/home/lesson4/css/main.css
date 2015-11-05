@@ -1,0 +1,213 @@
+/*********************************
+BODY
+*********************************/
+
+body {
+    background-image: url(../img/background.png);
+    width: 1280px;
+    font-family: Tahoma, Arial, sans-serif;
+    padding-bottom: 31px;
+}
+
+.wrapper {
+    background: #ffffff;
+    width: 1018px;
+    height: 991px;
+    margin: 0 auto;
+    box-shadow: 0 5px 0 5px rgba(0,0,0,0.5);
+}
+
+
+
+/*********************************
+HEADER
+*********************************/
+
+.google-head {
+    height: 38px;
+}
+
+.wrapper-header {
+    padding: 11px 42px 0 37px;
+}
+
+.logo {
+    background-color: green;
+    float: left;
+    height: 164px;
+}
+
+.logo p {
+    text-align: center;
+    position: relative;
+    bottom: 65px;
+}
+
+.contacts-box {
+    background-color: grey;
+    float: right;
+}
+
+.contacts {
+    width: auto;
+    padding-left: 165px;
+}
+
+.countries li {
+    display: inline-block;
+}
+
+.countries {
+    background-color: yellow;
+    padding-top: 33px;
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.photo {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+}
+
+.photo img {
+    margin: -206px -88px -3px -88px;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    width: 100%;
+}
+
+.menu {
+    border-bottom: 1px solid #000;
+    background: rgb(55,55,55); /* Old browsers */
+/*     background: -moz-linear-gradient(top,  rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(55,55,55,1)), color-stop(100%,rgba(48,48,48,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* W3C */
+    filter: progid:DXImageTransform. Microsoft.gradient( startColorstr='#373737', endColorstr='#303030',GradientType=0 ); /* IE6-9 */
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75); */
+    list-style: none;
+    float: left;
+    width: 100%;
+}
+
+.menu li {
+/*     position: relative; */
+    float: left;
+    list-style: none;
+}
+
+.menu a {
+    padding: 0 33px
+    display: block;
+    line-height: 28px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu ul {
+/*     display: none; */
+}
+
+/* .menu ul {
+    display: none;
+    position: absolute;
+    left: 23px;
+    visibility: hidden;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s;
+} */
+
+/* .menu li a {
+    position: relative;
+    padding: 0 33px;
+    display: block;
+    color: #ffffff;
+    line-height: 28px;
+    font: 400 15px OpenSans, sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    text-decoration: none; */
+}
+
+/* .menu ul+a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  height: 6px;
+  width: 5px;
+  background: url(../img/white_triangels.png)
+}
+ */
+
+
+/* .menu li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+
+.menu ul li {
+    background: #303030;
+}
+
+.menu ul a {
+    padding: 0 10px;
+} */
+
+
+/*********************************
+CONTENT
+*********************************/
+
+.fon {
+    background-image: url(../img/grey_bground.png);
+    width: 100%;
+    float: left;
+}
+
+.leftColomn {
+    width: 22%;
+    float: left;
+}
+
+.centerColomn {
+    background-color: white;
+    width: 56%;
+    padding-bottom: 484px;
+    margin: 0 auto;
+}
+
+.rightColomn {
+    width: 22%;
+    float: right;
+}
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/*********************************
+FOOTER
+*********************************/
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
