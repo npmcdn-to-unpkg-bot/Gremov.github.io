@@ -1,0 +1,105 @@
+/*********************************
+GENERAL
+*********************************/
+
+body {
+    background-color: #F5F5F5;
+    border-bottom: 2px solid black;
+    font: 400 14px/20px Arial, sans-serif;
+}
+
+
+
+/**********************************
+NAME (div)
+**********************************/
+
+.name {
+    background: white;
+    width: 408px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    padding: 50px;
+    -webkit-box-shadow: inset 0 0 5px 2px rgba(211,211,211,1);
+    -moz-box-shadow: inset 0 0 5px 2px rgba(211,211,211,1);
+    box-shadow: inset 0 0 5px 2px rgba(211,211,211,1);
+}
+
+h1 {
+    text-align: center;
+    font: 700 25px/30px Tahoma, Verdana, sans-serif;
+}
+
+.image {
+    border-bottom: 1px solid black;
+}
+
+.image p {
+    padding-left: 20px;
+}
+
+img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+/**********************************
+INTEREST
+**********************************/
+.interest {
+    border-bottom: 1px solid black;
+}
+
+.interest ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.interest ul li::before {
+    content: '\2022';
+}
+
+::before {
+    position: relative;
+    left: -10px;
+    font-weight: 700;
+}
+
+li {
+    padding: 10px;
+    padding-left: 30px;
+    margin-left: 10px;
+}
+
+
+
+/**********************************
+CONTACT
+**********************************/
+
+.contact {
+    border-bottom: 1px solid black;
+}
+
+.contact ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+
+
+/**********************************
+ADD INFO
+**********************************/
+
+.add-info p {
+    padding-left: 20px;
+    border-bottom: 0;
+}
