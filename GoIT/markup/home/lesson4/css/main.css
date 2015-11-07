@@ -1,0 +1,249 @@
+/*********************************
+BODY
+*********************************/
+
+body {
+    background-image: url(../img/background.png);
+    width: 1280px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    background: #ffffff;
+    width: 1004px;
+    height: 991px;
+    margin: 0 auto;
+    border-bottom: 3px solid color: #031d28;
+    -webkit-box-shadow: 0px -2px 6px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -2px 6px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px -2px 6px 2px rgba(0,0,0,0.75);
+}
+
+.html {
+    height: 100%;
+}
+
+
+
+/*********************************
+HEADER
+*********************************/
+
+.google-head {
+    width: 100%;
+    height: 38px;
+}
+
+.wrapper-header {
+    padding: 11px 42px 0 37px;
+    line-height: 1.5;
+    text-shadow: 1px 0px 2px;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    height: 164px;
+}
+
+.logo p {
+    text-align: center;
+    position: relative;
+    bottom: 65px;
+    font-size: 12px;
+    color: #128aa7;
+}
+
+.contacts-box {
+    float: right;
+}
+
+.contacts {
+    width: auto;
+    padding-left: 165px;
+}
+
+.contacts a, li {
+    font-size: 12px;
+    color: rgba(18, 138, 167, 0.8);
+    text-decoration: none;
+}
+
+.countries {
+    margin: 0 auto;
+    padding-top: 33px;
+    float: right;
+    
+
+}
+
+.countries li, a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 10px;
+    color: #128aa7;
+}
+
+.photo img {
+    margin: -206px -88px -3px -88px;
+}
+
+
+
+/*********************************
+MENU
+*********************************/
+
+.wrapper-menu {
+    margin: 0 auto;
+}
+
+.menu {
+    border-bottom: 1px solid #000;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#373737+0,303030+100 */
+    background: rgb(55,55,55); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(55,55,55,1)), color-stop(100%,rgba(48,48,48,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#303030',GradientType=0 ); /* IE6-9 */
+    
+    -webkit-box-shadow: 1px 2px 6px 4px rgba(0,0,0,0.69);
+    -moz-box-shadow: 1px 2px 6px 4px rgba(0,0,0,0.69);
+    box-shadow: 1px 2px 6px 4px rgba(0,0,0,0.69);
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    list-style: none;
+}
+
+.menu li a {
+    position: relative;
+    display: block;   
+    padding: 0 33px;
+    line-height: 28px;
+    text-align: left;
+    color:  #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    right: 10px;
+    height: 6px;
+    width: 5px;
+    background: url(../img/triangle.png) 0 0 no-repeat;
+}
+
+.menu ul {
+    position: absolute;
+    left: 23px;
+    visibility: hidden;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.menu li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+
+.menu ul li {
+    background: #303030;
+    width: 150px;
+    -webkit-box-shadow: 1px 10px 14px 2px rgba(0,0,0,0.69);
+    -moz-box-shadow: 1px 10px 14px 2px rgba(0,0,0,0.69);
+    box-shadow: 1px 10px 14px 2px rgba(0,0,0,0.69);
+}
+
+.menu ul a {
+    padding: 0 10px;
+}
+
+.image1 li > a:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 5px;
+    height: 10px;
+    width: 20px;
+    background: url(../img/triangle.png) 0 0 no-repeat;
+}
+
+/*********************************
+CONTENT
+*********************************/
+
+.fon {
+    background-image: url(../img/grey_bground.png);
+    width: 100%;
+    float: left;
+    color: #424c43;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    text-shadow: 1px 0px 3px rgba(111, 120, 113, 0.8);
+}
+
+.fon h1 {
+    color: #424c43;
+    font-size: 18px;
+}
+
+.leftColomn {
+    width: 21%;
+    float: left;
+}
+
+.centerColomn {
+    background-color: white;
+    width: 58%;
+    padding-bottom: 540px;
+    margin: 0 auto;
+}
+
+.rightColomn {
+    width: 21%;
+    float: right;
+}
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/*********************************
+FOOTER
+*********************************/
+
+.footer {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.5);
+}
