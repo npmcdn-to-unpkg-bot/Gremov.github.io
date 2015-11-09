@@ -57,17 +57,17 @@ HEADER
     border-right: 1px solid rgb(255, 255, 255);
 }
 
+.menu ul li {
+    line-height: 0;
+    font-size: 0;
+    vertical-align: 0;
+}
+
 
 
 /*********************************
 CONTENT
 *********************************/
-
-/*.content {*/
-/*    font: 400 13px OpenSans, sans-serif;*/
-/*    text-decoration: none;*/
-/*    color: #656363;*/
-/*}*/
 
 .left-menu {
     border: 1px solid #c8c8c8;
