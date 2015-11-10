@@ -19,6 +19,7 @@ HEADER
 *********************************/
 
 .fitnesslogo {
+    display: block;
     width: 146px;
     height: 40px;
 }
@@ -57,7 +58,7 @@ HEADER
     border-right: 1px solid rgb(255, 255, 255);
 }
 
-.menu ul li {
+.menu ul {
     line-height: 0;
     font-size: 0;
     vertical-align: 0;
@@ -72,9 +73,7 @@ CONTENT
 .left-menu {
     border: 1px solid #c8c8c8;
     width: 240px;
-    height: 240px;
     float: left;
-    
 }
 
 .left-menu li {
@@ -136,7 +135,6 @@ FOOTER
 }
 
 .footer li {
-    display: block;
     width: auto;
     line-height: 40px;
     padding-left: 50px;
