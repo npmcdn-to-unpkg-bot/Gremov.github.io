@@ -242,6 +242,12 @@ CONTENT
     float: left;
 }
 
+.box1 {
+    padding-bottom: 185px;
+    border-top: 1px solid #FDFDFD;
+    border-bottom: 1px solid #EBECEE;
+}
+
 .centerColomn {
     background-color: white;
     width: 586px;
@@ -254,6 +260,12 @@ CONTENT
 .rightColomn {
     width: 208px;
     float: right;
+}
+
+.box2 {
+    padding-bottom: 3px;
+    border-top: 1px solid #FDFDFD;
+    border-bottom: 1px solid #EBECEE;
 }
 
 /*********************************
