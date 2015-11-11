@@ -9,16 +9,19 @@ BODY
 
 body {
     background-image: url(../img/background.png);
-    width: 1280px;
-    margin: 0 auto;
     font-family: Tahoma, Arial, sans-serif;
     font-weight: 400;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
 }
 
 .wrapper {
     background: #ffffff;
     width: 1004px;
-    height: 991px;
     margin: 0 auto;
     border-bottom: 3px solid #031d28;
     -webkit-box-shadow: 0px -2px 6px 2px rgba(0,0,0,0.75);
@@ -28,35 +31,36 @@ body {
 
 
 
-
-
 /*********************************
 HEADER
 *********************************/
 
-ul,
-li {
+ul {
     line-height: 0;
     font-size: 0;
     vertical-align: 0;
 }
+
 .wrapper-header {
-    padding: 11px 42px 0 37px;
-    line-height: 1.5;
-    text-shadow: 1px 0px 2px;
+    padding: 40px 42px 0 37px;
 }
 
 .logo {
     float: left;
-    height: 164px;
 }
 
-.logo p {
-    text-align: center;
+.logo span {
     position: relative;
-    bottom: 65px;
+    right: 215px;
+    bottom: 47px;
+    line-height: 12px;
     font-size: 12px;
+    font-weight: 400;
     color: #128aa7;
+}
+
+.logo a {
+    text-decoration: none;    
 }
 
 .contact-box {
@@ -66,35 +70,51 @@ li {
 .contacts {
     width: auto;
     padding-left: 185px;
+
 }
 
-.contacts li {
+.contacts p {
     font-size: 12px;
-    line-height: 12px;
+    line-height: 18px;
+    font-weight: 400;
     color: rgba(18, 138, 167, 0.8);
 }
 
-.contacts a {
+.contacts li a {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgba(18, 138, 167, 0.8);
     text-decoration: none;    
 }
 
 .countries {
+    float: right;
     margin: 0 auto;
-    padding-top: 60px;
+    width: 365px;
+    padding-top: 38px;
 }
 
-.countries li, a {
-    display: inline-block;
+.countries a {
     font-size: 10px;
     line-height: 10px;
+    font-weight: 400;
+    float: left;
+    width: 56px;
     color: #128aa7;
-    padding-right: 3px;
     text-align: center;
 }
 
-.photo img {
-    margin: -206px -88px -3px -88px;
-    border-top: 1px solid #b5bac0;
+.countries a:hover {
+    text-decoration: none;
+}
+
+.photo { 
+    margin-top: 173px;
+    height: 238px;
+    background: url(../img/photo_Asia.jpg) no-repeat;
+    background-size: cover;
+    border-top: 1px solid #128aa7;
     border-bottom: 1px solid #128aa7;
 }
 
@@ -107,6 +127,7 @@ MENU
 .wrapper-menu {
     margin: 0 auto;
 }
+
 
 .menu {
     border-top: 1px solid #cacbcb;
@@ -135,13 +156,12 @@ MENU
 .menu li a {
     position: relative;
     display: block;   
-    padding: 0 33px;
+    padding: 0 37px;
     line-height: 28px;
-    text-align: left;
     color:  #ffffff;
     font-size: 14px;
+    font-weight: 400;
     text-decoration: none;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .dropdown:after {
@@ -199,29 +219,32 @@ CONTENT
 *********************************/
 
 .fon {
-    background-image: url(../img/grey_bground.png);
-    width: 100%;
+    background: #EBECEE;
+    width: 1002px;
     float: left;
     color: #424c43;
     font-size: 14px;
+    font-weight: 400;
     line-height: 23px;
     text-align: center;
-    text-shadow: 1px 0px 3px rgba(111, 120, 113, 0.8);
+    border-left: 1px solid #c7cacf;
+    border-right: 1px solid #c7cacf;
 }
 
 .fon h1 {
-    color: #424c43;
     font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
 }
 
 .leftColomn {
-    width: 21%;
+    width: 208px;
     float: left;
 }
 
 .centerColomn {
     background-color: white;
-    width: 58%;
+    width: 586px;
     padding-bottom: 541px;
     margin: 0 auto;
     border-left: 1px solid #c7cacf;
@@ -229,13 +252,8 @@ CONTENT
 }
 
 .rightColomn {
-    width: 21%;
+    width: 208px;
     float: right;
-}
-.clearfix:after {
-    content: '';
-    clear: both;
-    display: block;
 }
 
 /*********************************
@@ -248,6 +266,6 @@ FOOTER
     text-align: center;
     margin: 0 auto;
     font-size: 12px;
+    font-weight: 400;
     color: rgba(255, 255, 255, 0.8);
-    text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.5);
 }
