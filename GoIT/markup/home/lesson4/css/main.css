@@ -13,12 +13,6 @@ body {
     font-weight: 400;
 }
 
-.clearfix:after {
-    content: '';
-    clear: both;
-    display: block;
-}
-
 .wrapper {
     background: #ffffff;
     width: 1004px;
@@ -41,7 +35,13 @@ ul {
     vertical-align: 0;
 }
 
-.wrapper-header {
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.header {
     padding: 40px 42px 0 37px;
 }
 
@@ -68,7 +68,6 @@ ul {
 }
 
 .contacts {
-    width: auto;
     padding-left: 185px;
 
 }
@@ -97,7 +96,7 @@ ul {
 
 .countries a {
     font-size: 10px;
-    line-height: 10px;
+    line-height: 12px;
     font-weight: 400;
     float: left;
     width: 56px;
@@ -110,8 +109,8 @@ ul {
 }
 
 .photo { 
-    margin-top: 173px;
-    height: 238px;
+    margin-top: 7px;
+    height: 236px;
     background: url(../img/photo_Asia.jpg) no-repeat;
     background-size: cover;
     border-top: 1px solid #128aa7;
@@ -127,7 +126,6 @@ MENU
 .wrapper-menu {
     margin: 0 auto;
 }
-
 
 .menu {
     border-top: 1px solid #cacbcb;
@@ -162,6 +160,10 @@ MENU
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
+}
+
+.menu a:hover {
+    color: #D0D0D0;
 }
 
 .dropdown:after {
@@ -221,7 +223,6 @@ CONTENT
 .fon {
     background: #EBECEE;
     width: 1002px;
-    float: left;
     color: #424c43;
     font-size: 14px;
     font-weight: 400;
