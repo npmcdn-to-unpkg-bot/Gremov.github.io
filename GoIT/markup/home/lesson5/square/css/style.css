@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+td,
+tr {
+    border: 9px solid #000;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
