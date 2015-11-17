@@ -42,7 +42,7 @@ ul {
 }
 
 .header {
-    padding: 40px 42px 0 37px;
+    padding: 40px 32px 7px 37px;
 }
 
 .logo {
@@ -68,7 +68,7 @@ ul {
 }
 
 .contacts {
-    padding-left: 185px;
+    padding-left: 237px;
 
 }
 
@@ -90,7 +90,7 @@ ul {
 .countries {
     float: right;
     margin: 0 auto;
-    width: 365px;
+    width: 336px;
     padding-top: 38px;
 }
 
@@ -109,7 +109,6 @@ ul {
 }
 
 .photo { 
-    margin-top: 7px;
     height: 236px;
     background: url(../img/photo_Asia.jpg) no-repeat;
     background-size: cover;
@@ -236,6 +235,7 @@ CONTENT
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
+    padding: 10px;
 }
 
 .leftColomn {
