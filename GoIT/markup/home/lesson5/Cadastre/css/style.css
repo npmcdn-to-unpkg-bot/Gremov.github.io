@@ -27,26 +27,28 @@ ul {
 
 .header {
     background: #08599d;
-    width: 1215px;
-    margin: 0 auto;
-    text-align: right;
-}
-
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
+    height: 36px;
 }
 
 .menu {
     position: relative;
-    left: 370px;
-    float: left;
+    float: right;
+    margin: 0 30px;
+}
+
+.menu:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background: #56a2dc;
+    top: 2px;
+    bottom: 3px;
 }
 
 .menu li {
     display: block;
     float: left;
+    padding: 0 20px;
 }
 
 .menu li a {
@@ -66,16 +68,10 @@ ul {
     color: #fff;
 }
 
-/*.line {*/
-/*    position: relative;*/
-/*    top: 2px;*/
-/*    bottom: -2px;*/
-/*    border-right: 1px solid #56a2dc;*/
-/*}*/
-
 .add-menu {
+    position: relative;
     float: right;
-    height: 36px;
+    margin: 0 20px;
 }
 
 .add-menu a {
@@ -96,20 +92,19 @@ ul {
     padding: 0 10px;
 }
 
-.offers:before {
-    content: "";
-    position: absolute;
-    width: 1px;
-    background: #56a2dc;
-    top: 2px;
-    bottom: 3px;
-    left: -35px;
-   
-}
+/*.offers:before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    width: 1px;*/
+/*    background: #56a2dc;*/
+/*    top: 2px;*/
+/*    bottom: 3px;*/
+/*    left: -35px;*/
+/*}*/
 
 .offers a {
     font-size: 14px;
-    color:  #fefefe;
+    color:  #ffffff;
     font-weight: 400;
     text-decoration: none;
 }
@@ -131,19 +126,31 @@ ul {
     background: -ms-linear-gradient(top, rgba(68,157,210,1) 0%, rgba(58,141,203,1) 34%, rgba(51,128,197,1) 52%, rgba(46,121,194,1) 100%);
     background: linear-gradient(to bottom, rgba(68,157,210,1) 0%, rgba(58,141,203,1) 34%, rgba(51,128,197,1) 52%, rgba(46,121,194,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#449dd2', endColorstr='#2e79c2', GradientType=0 );
+    border: 1px solid #449ad3;
+    border-top: none;
 }
 
 .login span,
-a {
+.login a {
     color: #ffffff;
+    text-shadow: 1px 0 0 #6FADD9;
     font-size: 14px;
     font-weight: 400;
 }
 
-.text1:hover,
-.text2:hover {
-    color: #feffff;
+.text2:hover,
+.text3:hover {
     text-decoration: none;
+}
+
+.text1:hover {
+    color: #D8D8D8;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 
@@ -154,19 +161,17 @@ CONTENT
 
 .content {
     position: relative;
-    width: 1215px;
-    margin: 0 auto;
+    background: url('../img/bg.png') no-repeat;
+    height: 1028px;
 }
 
 .form-wrapper {
     position: absolute;
-    top: 25%;
-    bottom: 25%;
+    top: 20%;
     left: 0;
     right: 0;
     width: 560px;
     margin: 0 auto;
-    padding: 20px 140px;
 }
 
 .form-header {
@@ -197,7 +202,8 @@ h1 {
 }
 
 .fb-button {
-    margin: 20px auto;
+    position: relative;
+    margin: -10px auto;
     width: 276px;
     height: 30px;
     background: #3e5593;
@@ -217,6 +223,7 @@ h1 {
 }
 
 .fb-button a {
+    position: relative;
     font-size: 18px;
     font-family: "Helvetica Neue", Arial, Tahoma;
     display: block;
@@ -225,18 +232,24 @@ h1 {
 }
 
 .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 38px;
-    line-height: 30px;
-    padding: 5px 10px;
-    font-weight: bolder;
-    border-right: 1px solid #1f3a6f;
+    height: 30px;
+    background: url(../img/fb_logo.png) no-repeat;
+    /*width: 38px;*/
+    /*line-height: 30px;*/
+    /*padding: 5px 10px;*/
+    /*font-weight: bolder;*/
+    /*border-right: 1px solid #1f3a6f;*/
 }
 
 .socnet {
     position: relative;
     width: 238px;
     line-height: 30px;
-    padding: 0 20px;
+    padding: 0 41px;
     font-weight: bolder;
 }
 
@@ -260,7 +273,7 @@ h2 {
     font-weight: 400;
     line-height: 16px;
     text-align: center;
-    padding: 20px auto;
+    padding: 20px 0;
 }
 
 h2:before {
@@ -270,7 +283,7 @@ h2:before {
     border-top: 1px solid #666666;
     border-bottom: 1px solid #000;
     left: 1px;
-    bottom: 7px;
+    bottom: 27px;
 }
 
 h2:after {
@@ -280,7 +293,7 @@ h2:after {
     border-top: 1px solid #666666;
     border-bottom: 1px solid #000;
     right: 1px;
-    bottom: 7px;
+    bottom: 27px;
 }
 
 .input input {
@@ -293,25 +306,31 @@ h2:after {
     background: -ms-linear-gradient(top, #0f0f0f 0%, #101010 50%, #26271b 100%);
     background: linear-gradient(to bottom, #0f0f0f 0%, #101010 50%, #26271b 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#26271b', GradientType=0 );
-    width: 276px;
     font-size: 14px;
     font-weight: 400;
     font-family: "Helvetica Neue", Arial, Tahoma;
     color:  #cccccc;
     line-height: 33px;
     border: none;
-    -webkit-box-shadow: 0px 1px 0px 0px rgba(75,75,75,1);
-    -moz-box-shadow: 0px 1px 0px 0px rgba(75,75,75,1);
-    box-shadow: 0px 1px 0px 0px rgba(75,75,75,1);
+    border-bottom: #474746;
+    -webkit-box-shadow: 1px 1px 7px 0px rgba(75,75,75,1);
+    -moz-box-shadow: 1px 1px 7px 0px rgba(75,75,75,1);
+    box-shadow: 1px 1px 7px 0px rgba(75,75,75,1);
     margin: 15px 0;
+    padding: 0 89px 0 15px;
 }
 
-.input input:hover,
-placeholder:hover {
-    background: #1B5187;
-    color: #DCDCDC;
-    box-shadow: 0px 1px 0px 0px #4b4b4b;
+.input:focus {
+    background: #1b5287 no-repeat;  
 }
+
+.input:focus::-moz-placeholder {
+    background: #1b5287 no-repeat;
+}
+
+.input:focus::-webkit-input-placeholder {
+    background: #1b5287 no-repeat;
+} 
 
 .checkbox {
     color: #cccccc;
@@ -321,6 +340,7 @@ placeholder:hover {
 }
 
 .create-bn input {
+    position: relative;
     background: rgba(79,173,217,1);
     background: -moz-linear-gradient(top, rgba(79,173,217,1) 0%, rgba(46,121,194,1) 51%, rgba(46,121,194,1) 51%, rgba(46,121,194,1) 99%, rgba(46,121,194,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(79,173,217,1)), color-stop(51%, rgba(46,121,194,1)), color-stop(51%, rgba(46,121,194,1)), color-stop(99%, rgba(46,121,194,1)), color-stop(100%, rgba(46,121,194,1)));
@@ -346,7 +366,12 @@ placeholder:hover {
 }
 
 .create-bn input:hover {
+    color: #DCDCDC;
     cursor: pointer; 
     cursor: hand;
-    color: #DCDCDC;
+}
+
+p {
+    position: absolute;
+    right: 138px;
 }
