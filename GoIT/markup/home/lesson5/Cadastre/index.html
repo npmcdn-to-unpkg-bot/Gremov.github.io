@@ -9,9 +9,10 @@
     
     <body>
         
-        <header>
-            <div class="header clearfix">
-                
+        <div class="wrapper">
+            
+            <header class="header clearfix">
+
                 <div class="add-menu">
                     
                     <div class="flag">
@@ -55,60 +56,60 @@
                     </li>
     
                 </ul>
-            
-            </div> <!-- header -->
-            
-        </header>
-    
-        <div class="content">
 
-            <div class="form-wrapper">
-                
-                <div class="form-header">
-                    <h1>Cadastre-se</h1>
-                </div>
-                
-                <div class="form-contacts">
-                    <div class="fb-button">
-                        <a href="#">
-                            <span class="icon"></span>
-                            <span class="socnet">
-                                <strong>Log In</strong> with <strong>Facebook</strong>
-                            </span>
-                        </a>
+            </header>
+        
+            <div class="content">
+    
+                <div class="form-wrapper">
+                    
+                    <div class="form-header">
+                        <h1>Cadastre-se</h1>
                     </div>
                     
-                    <h2>OU</h2>
+                    <div class="form-contacts">
+                        <div class="fb-button">
+                            <a href="#">
+                                <span class="icon"></span>
+                                <span class="socnet">
+                                    <strong>Log In</strong> with <strong>Facebook</strong>
+                                </span>
+                            </a>
+                        </div>
+                        
+                        <h2>OU</h2>
+                        
+                        <form method="post" action="/">
+                            
+                            <div class="input">
+                                <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+                                <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
+                                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                                <input type="password" name="password" id="password" placeholder="Choose Password" required>
+                                <input type="password" name="password confirm" id="password_confirm" placeholder="Password Confirm" required>
+                            </div>
+                            
+                            <div class="checkbox">
+                                <input type="checkbox" id="send_item">
+                                <label for="send_item">Send me Youbike updates and tips</label>
+                            </div>
+                            
+                            <div class="create-bn">
+                                <input type="submit" value="Create my Account">
+                            </div>
+                        </form>
+                        
+                        <p class="text">By clicking the button above, you agree to the Terms of Service
+                        Xiew our Privacy Policy.
+                        </p>
                     
-                    <form action="/">
-                        
-                        <div class="input">
-                            <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
-                            <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
-                            <input type="email" name="email" id="email" placeholder="Email Address" required>
-                            <input type="password" name="password" id="password" placeholder="Choose Password" required>
-                            <input type="password" name="password confirm" id="password_confirm" placeholder="Password Confirm" required>
-                        </div>
-                        
-                        <div class="checkbox">
-                            <input type="checkbox" id="send_item">
-                            <label for="send_item">Send me Youbike updates and tips</label>
-                        </div>
-                        
-                        <div class="create-bn">
-                            <input type="submit" value="Create my Account">
-                        </div>
-                    </form>
-                    
-                    <p class="text">By clicking the button above, you agree to the Terms of Service
-                    Xiew our Privacy Policy.
-                    </p>
+                    </div> <!-- form-contacts -->
+        
+                </div> <!-- form-wrapper -->
                 
-                </div> <!-- form-contacts -->
-    
-            </div> <!-- form-wrapper -->
-            
-        </div> <!-- content -->
+            </div> <!-- content -->
+        
+        </div> <!-- wrapper -->
         
     </body>
 </html>
