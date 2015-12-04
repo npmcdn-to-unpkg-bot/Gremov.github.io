@@ -6,7 +6,7 @@ body {
 }
 
 .wrapper {
-    margin: 10px auto;
+    margin: 16px auto;
     width: 909px;
 }
 
@@ -88,7 +88,7 @@ ul {
     background: url(../img/icon_log.png) no-repeat;
     width: 14px;
     height: 18px;
-    margin-left: 5px;
+    margin: 3px -1px 3px 8px;
     float: left;
 }
 
@@ -107,7 +107,7 @@ ul {
     height: 11px;
     line-height: 11px;
     border: 1px solid #9ba1a3;
-    margin: 3px -3px 3px 5px;
+    margin: 5px -3px 3px 5px;
     padding: 1px 7px;
 }
 
@@ -148,7 +148,7 @@ ul {
 }
 
 .remind a {
-    padding-left: 20px;
+    padding-left: 12px;
     font-family: Tahoma, Arial, sans-serif;
     color: #bfbfbf;
     font-size: 12px;
@@ -178,23 +178,23 @@ ul {
 .navigation li {
     list-style: none;
     margin: 2px auto;
-    padding: 0px 13px;
+    padding: 0px 12px;
 }
 
 .navigation a {
     float: left;
     width: 15px;
     height: 16px;
-    background: url(../img/nav-sprites.png) no-repeat;
-    padding: 1px 0px;
+    background: url(../img/sprite_2.png) no-repeat;
+    padding: 1px 1px;
 }
 
 .navigation .map {
-    background-position: -16px 0;
+    background-position: -20px 0;
 }
 
 .navigation .email {
-    background-position: -32px 0;
+    background-position: -41px 0;
 }
 
 
@@ -424,7 +424,7 @@ h1 {
     line-height: 26px;
     position: relative;
     transform: scaleY(1.0003);
-    margin-right: 35px;
+    margin: 16px 32px 0 15px;
     padding-left: 30px;
 }
 
@@ -494,12 +494,6 @@ h1 {
     margin-bottom: 10px;
     padding-left: 28px;
 }
-
-.tires p,
-.wheels p {
-    margin: 16px 32px 0 15px;
-}
-
 
 .checkbox1,
 .checkbox2 {
@@ -571,6 +565,10 @@ figcuption {
     left: 15px;
 }
 
+figcuption a {
+    text-decoration: none;
+}
+
 .name {
     display: block;
     font-family: Arial, Tahoma, serif;
@@ -624,12 +622,12 @@ figcuption {
 
 .logos {
     overflow: hidden;
-    margin: 30px 0;
+    margin: 35px 0 10px 0;
     padding-left: 115px;
 }
 
-.logos li {
-    margin: 5px;
+.logos a {
+    margin: 6px;
 }
 
 .toyo {
@@ -695,10 +693,10 @@ figcuption {
 *********************************/
 
 footer {
-    height: 100px;
-    padding: 10px 280px 0 200px;
     background-color: #213a4d;
-    margin: 0 auto;
+    height: 100px;
+    margin: 10px 0 0 0;
+    padding: 0px 293px 0 293px;
     float: left;
     overflow: hidden;
     text-align: center;
@@ -715,13 +713,17 @@ footer {
     bottom: 3px;
 }
 
+.footer-menu {
+    padding-top: 10px;
+}
+
 .footer-menu li {
     float: left;
     position: relative;
 }
 
 .footer-menu li a {
-    padding: 10px 20px;
+    padding: 0px 13px;
     font-family: Tahoma, Arial, sans-serif;
     color: #bec6c9;
     font-size: 12px;
