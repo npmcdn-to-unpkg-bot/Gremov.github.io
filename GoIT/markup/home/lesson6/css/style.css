@@ -278,6 +278,9 @@ h1 {
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
+    line-height: 25px;
+    margin-top: 5px;
+    margin-bottom: 7px;
 }
 
 .cart {
