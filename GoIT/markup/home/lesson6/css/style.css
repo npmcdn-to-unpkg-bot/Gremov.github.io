@@ -140,6 +140,7 @@ ul {
     letter-spacing: 0.45px;
     line-height: 22px;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .actions a:hover {
