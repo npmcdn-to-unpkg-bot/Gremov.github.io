@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}    
+
+#fon {
+    background: #dddddd;
+}
+
+#answers {
+    display: block;
+}
+
+.wrapper {
+    background: #fff;
+    width: 600px;
+    height: 485px;
+    margin: 30px auto;
+    border: 1px solid #000;
+    border-bottom: none;
+}
+
+form {
+    padding: 0 75px;
+}
+
+.wrapper h1 {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+form h2 {
+    font-size: 14px;
+    font-family: Arial, Tahoma, sans-serif;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.response {
+    margin: 2px 0 0px 22px;
+    font-size: 12px;
+    font-family: Arial, Tahoma, sans-serif;
+    font-weight: 400;
+    line-height: 14px;
+} 
+
+.box {
+    position: relative;
+    top: 2px;
+    left: -5px;
+    margin: 5px;
+}
+
+#checkResult {
+    position: relative;
+    top: 37px;
+    left: 114px;
+    width: 245px;
+    height: 40px;
+}
