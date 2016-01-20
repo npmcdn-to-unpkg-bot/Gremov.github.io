@@ -761,7 +761,7 @@ body {
     
     .slider__item {
         margin: 0 auto;
-        padding: 0 2.8em;
+        padding: 0 2em;
     }
     
     .slider__inner1 {
@@ -803,12 +803,12 @@ body {
     }
     
     .slider__arrow__left {
-        left: 0;
+        left: -2%;
         margin-left: 0;
     }
     
     .slider__arrow__right {
-        right: 0;
+        right: -2%;
         background-position: -31px 0;
         margin-right: 0;
     }
@@ -1156,7 +1156,7 @@ body {
     
     .slider__item {
         margin: 0 auto;
-        padding: 0 0.8em;
+        padding: 0 2em;
     }
     
     .slider__inner1 {
@@ -1187,7 +1187,7 @@ body {
     }
     
     .slider__arrow__left {
-        left: -5%;
+        left: -3%;
         top: 50%;
     }
     
