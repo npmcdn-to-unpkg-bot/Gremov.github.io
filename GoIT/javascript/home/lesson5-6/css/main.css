@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body #body .body {
+    background-color: #000;
+}
+
+.header {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 42px;
+    color: grey;
+    font-weight: bold;
+}
+
+.content {
+    text-align: center;
+}
+
+.timer h2 {
+    display: inline-block;
+    margin: 20px auto;
+    color: red;
+}
+
+.buttons, .info {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.info p {
+    font-size: 24px;
+    color: grey;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    font-weight: bold;
+}
