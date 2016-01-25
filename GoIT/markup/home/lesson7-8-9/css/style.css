@@ -215,12 +215,12 @@ body {
 }
 
 .slider__arrow__left {
-    left: -7%;
+    left: -5%;
     top: 10%;
 }
 
 .slider__arrow__right {
-    right: -7%;
+    right: -5%;
     top: 10%;
     background-position: -31px 0;
 }
@@ -1156,7 +1156,7 @@ body {
     
     .slider__item {
         margin: 0 auto;
-        padding: 0 2em;
+        padding: 0 3.5em;
     }
     
     .slider__inner1 {
@@ -1187,12 +1187,12 @@ body {
     }
     
     .slider__arrow__left {
-        left: -3%;
+        left: 0;
         top: 50%;
     }
     
     .slider__arrow__right {
-        right: -1%;
+        right: 0;
         top: 50%;
         background-position: -31px 0;
     }
