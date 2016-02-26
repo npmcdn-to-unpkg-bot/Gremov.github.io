@@ -1,0 +1,17 @@
+img {
+    max-width: 100%;
+}
+
+/*.bx-pager-item a .bx-pager-link active {*/
+/*    color: red;*/
+/*    font-weight: 900;*/
+/*}*/
+
+/*figure {*/
+/*  border: 1px solid blue;*/
+/*  width: 450px;*/
+/*}*/
+
+figure .active-slide{
+  border: 6px solid red;
+}

@@ -12,7 +12,8 @@ body {
     position: relative;
 }
 
-.clearfix:after {
+.clearfix:after,
+.clearfix:before {
     content: "";
     display: block;
     clear: both;
@@ -763,6 +764,10 @@ body {
 /*********************************
             SHOP-section
 *********************************/
+.columns__left .hidden {
+    display: none;
+}
+
 .columns__left_box1 {
     width: 50%;
     float: left;

@@ -2,6 +2,7 @@
 (function () {
     
     function Slider (element) {
+        this.callback = callback || function() {};
         this.el = document.querySelector( element );
         this.init ();
     }
@@ -31,6 +32,7 @@
                     slide.style.opacity = 0;
                 }
             }
+            setTimeout( self.callback( currentSlide ), 500 );
         },
         
         highlightCurrentLink: function( link ) {
@@ -39,7 +41,10 @@
                 var a = self.navLinks[i];
                 a.className = "";
             }
+            
             link.className = "current";
+            
+            this.callback( currentSlide );
         },
         
         setup: function() {
@@ -89,8 +94,8 @@
                     //     self.buttonLeft.style.display = "none";
                     // }
                     
-                    if( self.index < 0 ) {
-                        self.index = self.total - 1;
+                    if( self.index == 0 ) {
+                        self.index = 0;
                     }
             
                     self.slideTo( self.index );
