@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <title>Gennadii Remizov | FE developper Project</title>
+    <title>Gennadii Remizov | FE developper Project-exam</title>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -75,15 +76,17 @@
         </div>
         <div class="container">
             <div class="frame__icon"></div>
-            <article class="about about__frame">
-                <h2 class="about__title about__title_frame">Energy efficiency</h2>
-                <p class="about__text about__text_frame">A human being traveling on a bicycle at 16–24 km/h (10–15 mph), using only the power required to walk, 
-                is the most energy-efficient means of human transport generally available.
-                Air drag, which increases with the square of speed, requires increasingly higher power outputs relative to speed,
-                power increasing with the cube of speed as power equals force times velocity. 
-                A bicycle in which the rider lies in a supine position is referred to as a recumbent bicycle or, if covered 
-                in an aerodynamic fairing to achieve very low air drag, as a streamliner.</p>
-            </article>
+            <div class="moveup">
+                <article class="about about__frame">
+                    <h2 class="about__title about__title_frame">Energy efficiency</h2>
+                    <p class="about__text about__text_frame">A human being traveling on a bicycle at 16–24 km/h (10–15 mph), using only the power required to walk, 
+                    is the most energy-efficient means of human transport generally available.
+                    Air drag, which increases with the square of speed, requires increasingly higher power outputs relative to speed,
+                    power increasing with the cube of speed as power equals force times velocity. 
+                    A bicycle in which the rider lies in a supine position is referred to as a recumbent bicycle or, if covered 
+                    in an aerodynamic fairing to achieve very low air drag, as a streamliner.</p>
+                </article>
+            </div>
         </div> <!-- container -->
         <div class="photo__2"></div>
     </section>
@@ -91,30 +94,35 @@
     <section class="treadle-section">
         <div class="container">
             <div class="treadle__icon"></div>
-            <article class="about about__treadle">
-                <h2 class="about__title about__title_treadle">To make cycling simpler</h2>
-                <p class="about__text about__text_treadle">We believe that your bike should be ready to ride when you are. 
-                We’re dedicated to taking the stress out of buying, owning, and maintaining a bicycle.</p>
-            </article>
-        </div> <!-- container -->
-        <div class="photo__3"></div>
-        <div class="photo__4">
-            <div class="tradelogos logo__2"></div>
+            <div class="moveup">
+                <article class="about about__treadle">
+                    <h2 class="about__title about__title_treadle">To make cycling simpler</h2>
+                    <p class="about__text about__text_treadle">We believe that your bike should be ready to ride when you are. 
+                    We’re dedicated to taking the stress out of buying, owning, and maintaining a bicycle.</p>
+                </article>
+            </div>
+            </div> <!-- container -->
+            <div class="photo__3"></div>
+            <div class="photo__4">
+                <div class="tradelogos__treadle"></div>
+            </div>
         </div>
     </section>
     
     <section class="fork-section">
         <div class="photo__5">
-            <div class="tradelogos logo__3"></div>
+            <div class="tradelogos tradelogos__fork"></div>
         </div>
         <div class="container">
             <div class="fork__icon"></div>
-            <article class="about about__fork">
-                <h2 class="about__title about__title_fork">To change cycling for the recreational rider</h2>
-                <p class="about__text about__text_fork">Everyone deserves a high quality and low maintenance bike at an affordable price. 
-                Through innovative design and unparalleled engineering, paired with delivering directly to our riders, 
-                we are making that vision a reality.</p>
-            </article>
+            <div class="moveup">
+                <article class="about about__fork">
+                    <h2 class="about__title about__title_fork">To change cycling for the recreational rider</h2>
+                    <p class="about__text about__text_fork">Everyone deserves a high quality and low maintenance bike at an affordable price. 
+                    Through innovative design and unparalleled engineering, paired with delivering directly to our riders, 
+                    we are making that vision a reality.</p>
+                </article>
+            </div>
         </div> <!-- container -->
         <div class="photo__6"></div>
         <div class="photo__7"></div>
@@ -177,7 +185,7 @@
     </section> <!-- slider -->
     
     <section class="shop">
-        <div class="container">
+        <!--<div class="container">-->
             <div class="columns">
                 
                 <div class="columns__left clearfix">
@@ -196,7 +204,7 @@
                         </div>
                     </div>
                     <div class="columns__left_box3">
-                        <img class="left__box_img" src="img/ph3m.jpg" title="Bike Seats" alt="Limited edition">
+                        <img class="left__box_img" src="img/ph3m.jpg" title="Limited edition" alt="Limited edition">
                         <div class="left__box_overlay">
                             <a href="#" class="left__box_overlay_title">Limited edition</a>
                             <a href="#" class="left__box_overlay_title hidden">x</a>
@@ -204,7 +212,7 @@
                     </div>
                 </div>
             
-                <div class="columns__mid">
+                <div class="columns__mid clearfix">
                     
                     <div class="columns__mid_box1">
                         <img class="mid__box_img" src="img/ph4m.jpg" title="Shop bags" alt="Suitable bags">
@@ -246,7 +254,7 @@
                 </div>
                 
             </div> <!-- columns -->
-        </div> <!-- container -->
+        <!--</div>-->
     </section> <!-- shop -->
     
     <section class="discover">
@@ -298,6 +306,8 @@
     </footer> <!-- footer -->
     
     <script src="js/main.js"></script>
+    <!--<script src="js/events.js"></script>-->
+    <script src="js/animate.js"></script>
         
 </body>
 </html>

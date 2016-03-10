@@ -329,7 +329,9 @@ body {
     margin-top: 4.375em;
 }
 
-.moveup {
+.about__frame {
+    padding-bottom: 0;
+    
     opacity: 0;
 
     -webkit-transform: translate3d(0px, 150px, 0px);
@@ -337,11 +339,10 @@ body {
          -o-transform: translate(0px, 150px);
         -ms-transform: translate(0px, 150px);
             transform: translate3d(0px, 150px, 0px);
-    
 }
 
-.moveup__animated {
-    /*padding-bottom: 5.9375em;*/
+.about__frame_animated {
+    padding-bottom: 5.9375em;
 
     opacity: 1;
     
@@ -356,12 +357,6 @@ body {
         -ms-transform: translate(0px, 0px);
             transform: translate3d(0px, 0px, 0px);
 }
-
-.about__frame {
-    padding-bottom: 5.9375em;
-    
-}
-
 
 .frame-section .about::after {
     display: block;
@@ -388,6 +383,8 @@ body {
 }
 
 .photo__2 {
+    position: relative;
+    
     background: url(../img/photo_2m.jpg) top center no-repeat;
     -webkit-background-size: cover;
        -moz-background-size: cover;
@@ -446,7 +443,7 @@ body {
 }
 
 .photo__3 {
-    /*position: relative;*/
+    position: relative;
     
     background: url(../img/photo_3m.jpg) top center no-repeat;
     -webkit-background-size: cover;

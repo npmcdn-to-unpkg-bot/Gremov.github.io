@@ -329,19 +329,21 @@ body {
     margin-top: 4.375em;
 }
 
-.moveup {
-    opacity: 0;
+.about__frame {
+    padding-bottom: 0;
 
     -webkit-transform: translate3d(0px, 150px, 0px);
        -moz-transform: translate3d(0px, 150px, 0px);
          -o-transform: translate(0px, 150px);
         -ms-transform: translate(0px, 150px);
             transform: translate3d(0px, 150px, 0px);
-    
+
+    opacity: 0;
 }
 
-.moveup__animated {
+.about__frame_animated {
     /*padding-bottom: 5.9375em;*/
+    padding-bottom: 6em;
 
     opacity: 1;
     
@@ -350,18 +352,12 @@ body {
          -o-transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
             transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
             
-    -webkit-transform: translate3d(0px, 0px, 0px);
-       -moz-transform: translate3d(0px, 0px, 0px);
-         -o-transform: translate(0px, 0px);
-        -ms-transform: translate(0px, 0px);
-            transform: translate3d(0px, 0px, 0px);
+            -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
 }
-
-.about__frame {
-    padding-bottom: 5.9375em;
-    
-}
-
 
 .frame-section .about::after {
     display: block;
@@ -388,6 +384,8 @@ body {
 }
 
 .photo__2 {
+    position: relative;
+    
     background: url(../img/photo_2m.jpg) top center no-repeat;
     -webkit-background-size: cover;
        -moz-background-size: cover;
@@ -446,7 +444,7 @@ body {
 }
 
 .photo__3 {
-    /*position: relative;*/
+    position: relative;
     
     background: url(../img/photo_3m.jpg) top center no-repeat;
     -webkit-background-size: cover;
@@ -473,11 +471,11 @@ body {
     height: 600px;
 }
 
-.tradelogos__treadle {
+.tradelogos__right {
     position: absolute;
     top: 50%;
     right: 0;
-    margin: 0 -11.0625em 0 0;
+    margin: 0 -7.0625em 0 0;
 
     -webkit-transform: translate(-50%, -50%);
        -moz-transform: translate(-50%, -50%);
@@ -485,8 +483,8 @@ body {
          -o-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     
-    width: 177px;
-    height: 152px;
+    width: 113px;
+    height: 118px;
     
     background: url(../img/tdlogo__2.png) center center no-repeat;
     
@@ -504,6 +502,12 @@ body {
        -moz-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
          -o-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
             transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+       /* -webkit-transform: translate(-50%, -50%);*/
+       /*-moz-transform: translate(-50%, -50%);*/
+       /* -ms-transform: translate(-50%, -50%);*/
+       /*  -o-transform: translate(-50%, -50%);*/
+       /*     transform: translate(-50%, -50%);*/
+    
 }
 
 
@@ -527,7 +531,7 @@ body {
     height: 600px;
 }
 
-.tradelogos__fork {
+.logo__3 {
     width: 208px;
     height: 67px;
     
