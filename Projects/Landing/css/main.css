@@ -199,6 +199,32 @@ body {
     background: #f7f7f7;
 }
 
+.effect {
+    opacity: 0;
+
+    -webkit-transform: translate3d(0px, 150px, 0px);
+       -moz-transform: translate3d(0px, 150px, 0px);
+         -o-transform: translate(0px, 150px);
+        -ms-transform: translate(0px, 150px);
+            transform: translate3d(0px, 150px, 0px);
+    
+}
+
+.effect__up_animated {
+    opacity: 1;
+    
+    -webkit-transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+       -moz-transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+         -o-transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+            transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+            
+    -webkit-transform: translate3d(0px, 0px, 0px);
+       -moz-transform: translate3d(0px, 0px, 0px);
+         -o-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+}
+
 .chain__icon {
     background: url(../img/chain_icn.png) top center no-repeat;
     
@@ -289,7 +315,7 @@ body {
     height: 600px;
 }
 
-.tradelogos {
+.effect__left {
     position: absolute;
     top: 50%;
     left: 0;
@@ -298,16 +324,18 @@ body {
         -ms-transform: translate(-50%, -50%);
          -o-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    
+            
+    opacity: 0;
+}
+
+.tradelogos {
     width: 113px;
     height: 118px;
     
     background: url(../img/tdlogo__1.png) top center no-repeat;
-    
-    opacity: 0;
 }
 
-.tradelogos__left_animated {
+.effect__left_animated {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -473,27 +501,22 @@ body {
     height: 600px;
 }
 
-.tradelogos__treadle {
+.effect__right {
     position: absolute;
     top: 50%;
     right: 0;
     margin: 0 -11.0625em 0 0;
-
+    
     -webkit-transform: translate(-50%, -50%);
        -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
          -o-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     
-    width: 177px;
-    height: 152px;
-    
-    background: url(../img/tdlogo__2.png) center center no-repeat;
-    
     opacity: 0;
 }
 
-.tradelogos__right_animated {
+.effect__right_animated {
     position: absolute;
     right: 50%;
     top: 50%;
@@ -504,6 +527,16 @@ body {
        -moz-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
          -o-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
             transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tradelogos__treadle {
+
+    
+    width: 177px;
+    height: 152px;
+    
+    background: url(../img/tdlogo__2.png) center center no-repeat;
+    
 }
 
 

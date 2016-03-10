@@ -1,8 +1,8 @@
 
 (function() {
-var $tradelogos = $('.tradelogos');
-var $tradelogosTreadle = $('.tradelogos__treadle');
-var $moveUp = $('.moveup');
+var $animateLeft = $('.effect__left');
+var $animateRight = $('.effect__right');
+var $effectUp = $('.effect');
 var $window = $(window);
 
 function animateLeft() {
@@ -10,7 +10,7 @@ function animateLeft() {
     var windowTopPosition = $window.scrollTop();
     var windowBottomPosition = (windowTopPosition + windowHeight);
 
-    $.each($tradelogos, function() {
+    $.each($animateLeft, function() {
     var $element = $(this);
     var elementHeight = $element.outerHeight();
     var elementTopPosition = $element.offset().top;
@@ -19,9 +19,9 @@ function animateLeft() {
     //check to see if this current container is within viewport
     if ((elementBottomPosition >= windowTopPosition) &&
         (elementTopPosition <= windowBottomPosition)) {
-      $element.addClass('tradelogos__left_animated');
+      $element.addClass('effect__left_animated');
     } else {
-      $element.removeClass('tradelogos__left_animated');
+      $element.removeClass('effect__left_animated');
     }
   });
 }
@@ -31,7 +31,7 @@ function animateRight() {
     var windowTopPosition = $window.scrollTop();
     var windowBottomPosition = (windowTopPosition + windowHeight);
 
-    $.each($tradelogosTreadle, function() {
+    $.each($animateRight, function() {
     var $element = $(this);
     var elementHeight = $element.outerHeight();
     var elementTopPosition = $element.offset().top;
@@ -40,19 +40,19 @@ function animateRight() {
     //check to see if this current container is within viewport
     if ((elementBottomPosition >= windowTopPosition) &&
         (elementTopPosition <= windowBottomPosition)) {
-      $element.addClass('tradelogos__right_animated');
+      $element.addClass('effect__right_animated');
     } else {
-      $element.removeClass('tradelogos__right_animated');
+      $element.removeClass('effect__right_animated');
     }
   });
 }
 
-function moveUp() {
+function effectUp() {
     var windowHeight = $window.height();
     var windowTopPosition = $window.scrollTop();
     var windowBottomPosition = (windowTopPosition + windowHeight);
 
-    $.each($moveUp, function() {
+    $.each($effectUp, function() {
     var $element = $(this);
     var elementHeight = $element.outerHeight();
     var elementTopPosition = $element.offset().top;
@@ -61,15 +61,15 @@ function moveUp() {
     //check to see if this current container is within viewport
     if ((elementBottomPosition >= windowTopPosition) &&
         (elementTopPosition <= windowBottomPosition)) {
-      $element.addClass('moveup__animated');
+      $element.addClass('effect__up_animated');
     } else {
-      $element.removeClass('moveup__animated');
+      $element.removeClass('effect__up_animated');
     }
   });
 }
 
 $window.on('scroll resize', animateLeft);
 $window.on('scroll resize', animateRight);
-$window.on('scroll resize', moveUp);
+$window.on('scroll resize', effectUp);
 $window.trigger('scroll');
 })();
