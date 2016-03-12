@@ -37,7 +37,8 @@ body {
     padding-bottom: 48.5em;
 }
 
-.header h1 {
+.header h1,
+.signup h2 {
     text-indent: 9999px;
     overflow: hidden;
 }
@@ -479,6 +480,7 @@ body {
     background: url(../img/photo_3m.jpg) top center no-repeat;
     -webkit-background-size: cover;
        -moz-background-size: cover;
+        background-position: center;
          -o-background-size: cover;
             background-size: cover;
     
@@ -495,8 +497,9 @@ body {
     background: url(../img/photo_4m.jpg) top center no-repeat;
     -webkit-background-size: cover;
        -moz-background-size: cover;
+        background-position: center; /* Internet Explorer 7/8 */
          -o-background-size: cover;
-            background-size: cover;
+            background-size: cover; 
     
     height: 600px;
 }
@@ -505,13 +508,18 @@ body {
     position: absolute;
     top: 50%;
     right: 0;
-    margin: 0 -11.0625em 0 0;
     
-    -webkit-transform: translate(-50%, -50%);
-       -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-         -o-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    /*-webkit-transform: translate(-50%, -50%);*/
+    /*   -moz-transform: translate(-50%, -50%);*/
+    /*    -ms-transform: translate(-50%, -50%);*/
+    /*     -o-transform: translate(-50%, -50%);*/
+    /*        transform: translate(-50%, -50%);*/
+            
+       /*         -webkit-transform: translate(50%, 50%);*/
+       /*-moz-transform: translate(50%, 50%);*/
+       /* -ms-transform: translate(50%, 50%);*/
+       /*  -o-transform: translate(50%, 50%);*/
+       /*     transform: translate(50%, 50%);*/
     
     opacity: 0;
 }
@@ -520,6 +528,7 @@ body {
     position: absolute;
     right: 50%;
     top: 50%;
+    /*margin: 0 -11.0625em 0 0;*/
 
     opacity: 1;
     
@@ -904,3 +913,107 @@ body {
 .columns__right_box1 {
     width: 100%;
 }
+
+
+
+/*********************************
+           DISCOVER-section
+*********************************/
+.discover {
+    padding: 4.375em 0;
+    
+    text-align: center;
+    
+    background: #282f35;
+}
+
+.discover__item {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.discover__link {
+    display: inline-block;
+    padding: 0.9375em 3.125em;
+    
+    
+    border: 1px solid #ffffff;
+    
+    font-size: 0.875em;
+    line-height: 1.125em;
+    font-family: LatoBold, Tahoma, Arial, sans-serif;
+    letter-spacing: 0.125em;
+    
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.discover__link:hover {
+    color: #64c29e;
+    
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+
+
+/*********************************
+           SIGN-UP-section
+*********************************/
+.signup {
+    display: block;
+    margin: 20px auto;
+    padding: 6.8125em 0 6.9375em 0;
+}
+
+.logo__header {
+    padding: 1.25em 0;
+    
+    text-align: center;
+    
+    color: #848789;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: LatoItalic, Tahoma, Arial, sans-serif;
+    letter-spacing: 0.0625em;
+}
+
+.signup__form_input {
+    float: left;
+    width: 200px;
+    height: 50px;
+    /*width: 57%;*/
+    
+    padding: 0.5em;
+
+    border: solid 1px #d3d7d9;
+    
+    background-color: #ffffff;
+    color: #d3d7d9;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-family: LatoItalic, Tahoma, Arial, sans-serif;
+    letter-spacing: 0.0625em;
+}
+
+.signup__form_btn {
+    float: left;
+    width: 80px;
+    height: 50px;
+    /*width: 57%;*/
+    
+    margin-left: 0.5em; 
+
+    background-color: #64c29e;
+    color: #ffffff;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-family: LatoLight, Tahoma, Arial, sans-serif;
+    text-align: center;
+}
+
+
+
+/*********************************
+           FOOTER
+*********************************/
