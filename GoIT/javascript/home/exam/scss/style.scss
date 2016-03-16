@@ -1,0 +1,27 @@
+@import "../sprites/sprite";
+
+.socmedia {
+    
+    &__item, 
+    &__link {
+        display: inline-block;
+    }
+    
+    &__link {
+        &_facebook {
+            @include sprite($facebook);
+        }
+    }
+    
+    &__link {
+        &_twitter {
+            @include sprite($twitter);
+        }
+    }
+    
+    &__link {
+        &_pintrest {
+            @include sprite($pintrest);
+        }
+    }
+}
