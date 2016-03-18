@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="app/css/bundle2.min.css">
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -264,6 +266,9 @@
             </div> <!-- columns -->
         <!--</div>-->
     </section> <!-- shop -->
+
+    <section class="vintage-bicycle-gallery">
+    </section>
     
     <section class="discover">
         <div class="container">
@@ -277,13 +282,11 @@
         <div class="container container__search">
             <h2 class="logo"><a href="#" title="home" alt="Logo">AOD</a></h2>
             <h3 class="logo__header">Stay on the saddle!</h3>
-            <form name="search__form">
-                <input type="text" name="search" class="search__form_input" placeholder="find your item" form="data" required>
-                <button type="submit" class="search__form_btn" value="search">Search items</button>
-            </form>
+                <input type="text" name="search" class="search__form_input" placeholder="find your item">
+                <button type="button" onclick="getDataByQuery()" class="search__form_btn" value="search">Search items</button>
         </div> <!-- container -->
     </section> <!-- search -->
-    
+
     <footer class="footer">
         <div class="container container__footer">
             <div class="contacts">
@@ -312,9 +315,22 @@
             </div>
         </div>
     </footer> <!-- footer -->
+
+    <!--start template -->
+    <script type="text/template" id="vintage-bicycle-gallery-template">
+        <div class="grid">
+            <% images.forEach(function(image) { %>
+            <div class="grid-item <%-image.className%>"><img class="<%-image.imageClassName%>" src="<%-image.url%>" /></div>
+            <% }); %>
+        </div>
+    </script>
+    <!--end template -->
     
     <script src="js/main.js"></script>
     <script src="js/animate.js"></script>
+    <script src="js/pixabay-api.js"></script>
+    <script src="js/template-helper.js"></script>
+    <script src="js/images.js"></script>
         
 </body>
 </html>
