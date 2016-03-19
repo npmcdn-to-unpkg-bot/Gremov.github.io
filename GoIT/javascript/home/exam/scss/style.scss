@@ -7,15 +7,52 @@
         display: inline-block;
     }
     
+    &__list
+    &__link {
+        transition: 0.2s all;
+    }
+    
+    &__list
+    &__link:hover {
+        background-position: 0 -35px;
+    }
+    
+    &__list 
+    &__link {
+        &_twitter:hover {
+            background-position: 0 -35px;
+        }
+    }
+    
+    &__list 
+    &__link {
+        &_facebook:hover {
+            background-position: -37px -35px;
+        }
+    }
+
+    &__list
+    &__link {
+        &_pintrest:hover {
+            background-position: -73px -35px;
+        }
+    }
+    
     &__link {
         &_facebook {
-            @include sprite($facebook);
+            margin: 0 .5em;
         }
     }
     
     &__link {
         &_twitter {
             @include sprite($twitter);
+        }
+    }
+    
+    &__link {
+        &_facebook {
+            @include sprite($facebook);
         }
     }
     

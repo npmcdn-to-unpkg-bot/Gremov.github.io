@@ -30,7 +30,7 @@ gulp.task('css', function () {
     .pipe(rename('bundle.min.css'))
     .pipe(notify('Done!'))
   	.pipe(autoprefixer())
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('css'))
 });
 
 gulp.task('scss', function () {
@@ -41,13 +41,14 @@ gulp.task('scss', function () {
     .pipe(rename('bundle2.min.css'))
     .pipe(notify('Done!'))
   	.pipe(autoprefixer())
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('css'))
 });
 
 gulp.task('sprite', function () {
   var spriteData = gulp.src('img/icons/*.png').pipe(spritesmith({
     imgName: 'sprite.png',
-    cssName: 'sprite.scss'
+    cssName: 'sprite.scss',
+    padding: 15
   }));
   return spriteData.pipe(gulp.dest('sprites/'));
 });
