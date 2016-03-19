@@ -1,7 +1,10 @@
 var takeImages = 9;
+var takeSliders = 10;
 var perPageCount = 30;
+var perPageSlidesCount = 40;
 var API_KEY = '2217298-38addbee8ad85b3796d49a68a';
 var vintageBicycleGallery = [];
+var bikeSliders = [];
 
 var req;
 
@@ -50,8 +53,25 @@ function fillRandomImages(images){
     }
 }
 
+function fillRandomSlides(slides){
+    for (var i=0; i<=takeSliders; i++) {
+        var slideIndex = _.random(0, perPageSlidesCount-1);
+        var currSlide = slides.hits[slideIndex];
+        var imgNumber = i+1;
+        var imgUrl = currSlide.webformatURL;
+        var imgVisibleClass = '';
+        if(i == 0){ imgVisibleClass = 'visible'; }
+        var slideData = { imageNumber: imgNumber, imageUrl: imgUrl, imageVisibleClass: imgVisibleClass };
+        bikeSliders.push(slideData);
+    }
+}
+
 function getUrlForImages(query){
     return "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(query)+"&per_page="+perPageCount;
+}
+
+function getUrlForSlides(query){
+    return "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(query)+"&per_page="+perPageSlidesCount;
 }
 
 function getDefaultSearchUrl(){
@@ -60,3 +80,6 @@ function getDefaultSearchUrl(){
 
 var pixabayImages = getData(getDefaultSearchUrl(),'');
 fillRandomImages(pixabayImages);
+
+var pixabaySlides = getData(getUrlForSlides('bike'), '');
+fillRandomSlides(pixabaySlides);

@@ -139,59 +139,6 @@
     </section>
     
     <section class="slider" id="main__slider">
-        <div class="container">
-            <div class="slider__list_wrap">
-                <ul class="slider__list">
-                    <li class="slider__item clearfix">
-                        <img class="slider__img" id="slider__img_1" data-image="img/slide_1.jpg" alt="">
-                        <p class="slider__caption visible">Caption 1</p>
-                    </li> 
-                    
-                    <li class="slider__item clearfix">
-                        <img class="slider__img" id="slider__img_2" data-image="img/slide_2.jpg" alt="">
-                        <p class="slider__caption">Caption 2</p>
-                    </li> 
-                    
-                    <li class="slider__item clearfix">
-                        <img class="slider__img" id="slider__img_3" data-image="img/slide_3.jpg" alt="">
-                        <p class="slider__caption">Caption 3</p>
-                    </li> 
-                    
-                    <li class="slider__item clearfix">
-                        <img class="slider__img" id="slider__img_4" data-image="img/slide_4.jpg" alt="">
-                        <p class="slider__caption">Caption 4</p>
-                    </li> 
-                    
-                    <li class="slider__item clearfix">
-                        <img class="slider__img" id="slider__img_5" data-image="img/slide_5.jpg" alt="">
-                        <p class="slider__caption">Caption 5</p>
-                    </li>
-                </ul>
-            </div> <!-- slider__list_wrap -->
-        </div> <!-- container -->
-        <div class="slider__controls"> <!-- "Left" and "Right" actions -->
-            <button type="button" class="slider__controls_btn slider__controls_btn_left">left</button>
-            <button type="button" class="slider__controls_btn slider__controls_btn_right">right</button>
-        </div>
-        
-        <ul class="slider__buttons">
-            <li>
-                <a href="#slider__img_1">1</a>
-            </li>
-            <li>
-                <a href="#slider__img_2">2</a>
-            </li>
-            <li>
-                <a href="#slider__img_3">3</a>
-            </li>
-            <li>
-                <a href="#slider__img_4">4</a>
-            </li>
-            <li>
-                <a href="#slider__img_5">5</a>
-            </li>
-        </ul>
-    
     </section> <!-- slider -->
     
     <section class="shop">
@@ -316,7 +263,7 @@
         </div>
     </footer> <!-- footer -->
 
-    <!--start template -->
+    <!--start template masonry images-->
     <script type="text/template" id="vintage-bicycle-gallery-template">
         <div class="grid">
             <% images.forEach(function(image) { %>
@@ -325,12 +272,39 @@
         </div>
     </script>
     <!--end template -->
+
+    <!--start template slider images-->
+    <script type="text/template" id="slider-images-template">
+        <div class="container">
+            <div class="slider__list_wrap">
+                <ul class="slider__list">
+                    <% slides.forEach(function(slide) { %>
+                    <li class="slider__item clearfix">
+                        <img class="slider__img" id="slider__img_<%-slide.imageNumber%>" data-image="<%-slide.imageUrl%>" alt="">
+                        <p class="slider__caption <%-slide.imageVisibleClass%>">Caption <%-slide.imageNumber%></p>
+                    </li>
+                    <% }); %>
+                </ul>
+            </div>
+        </div>
+        <div class="slider__controls"> <!-- "Left" and "Right" actions -->
+            <button type="button" class="slider__controls_btn slider__controls_btn_left">left</button>
+            <button type="button" class="slider__controls_btn slider__controls_btn_right">right</button>
+        </div>
+        <ul class="slider__buttons">
+            <% slides.forEach(function(slide) { %>
+            <li>
+                <a href="#slider__img_<%-slide.imageNumber%>"><%-slide.imageNumber%></a>
+            </li>
+            <% }); %>
+        </ul>
+    </script>
+    <!--end template -->
     
-    <script src="js/main.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/pixabay-api.js"></script>
     <script src="js/template-helper.js"></script>
     <script src="js/images.js"></script>
-        
+    <script src="js/main.js"></script>
 </body>
 </html>
