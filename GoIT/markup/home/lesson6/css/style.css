@@ -205,10 +205,7 @@ ul {
 *********************************/
 
 .banner {
-    height: 237px;
-    position: relative;
     background: url(../img/blick.jpg) center center no-repeat;
-    margin: 12px 0 6px 0px;
 }
 
 h1 {
@@ -218,9 +215,7 @@ h1 {
 
 .banner a {
     display: block;
-    margin: 100px 0 0 2px;
-    width: 266px;
-    height: 70px;
+    margin: 75px auto;
 }
 
 /*********************************

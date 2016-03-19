@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="app/css/bundle2.min.css">
+    <link rel="stylesheet" href="css/bundle2.min.css">
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.js"></script>
     <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -28,30 +29,30 @@
                 
                 <input type="checkbox" id="hidden__menu" class="hidden__menu">
                 <label class="btn-menu" for="hidden__menu">
-                  <span class="first"></span>
-                  <span class="second"></span>
-                  <span class="third"></span>
+                    <span class="first"></span>
+                    <span class="second"></span>
+                    <span class="third"></span>
                 </label>
 
                 <ul class="menu menu__mobile">
 
                     <li class="menu__item">
-                        <a class="menu__link" href="#">About</a>
+                        <a class="menu__link" href="#chain-section">About</a>
                     </li>
                     <li class="menu__item dot">
                         <a class="menu__link" href="#">.</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Work</a>
+                        <a class="menu__link" href="#treadle-section">Cycling</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Shop</a>
+                        <a class="menu__link" href="#discover">Shop</a>
                     </li>
                     <li class="menu__item dot">
                         <a class="menu__link" href="#">.</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Contacts</a>
+                        <a class="menu__link" href="#footer">Contacts</a>
                     </li>
 
                 </ul>
@@ -59,7 +60,7 @@
         </div> <!-- container -->
     </header>
     
-    <section class="chain-section">
+    <section id="chain-section" class="chain-section">
         <div class="container">
             <div class="effect">
                 <div class="chain__icon"></div>
@@ -97,7 +98,7 @@
         <div class="photo__2"></div>
     </section>
     
-    <section class="treadle-section">
+    <section id="treadle-section" class="treadle-section">
         <div class="container">
             <div class="effect">
                 <div class="treadle__icon"></div>
@@ -141,89 +142,103 @@
     <section class="slider" id="main__slider">
     </section> <!-- slider -->
     
-    <section class="shop">
+    <!--<section class="shop">-->
         <!--<div class="container">-->
-            <div class="columns">
+    <!--        <div class="columns">-->
                 
-                <div class="columns__left clearfix">
-                    <div class="columns__left_box1">
-                        <img class="left__box_img" src="img/ph1m.jpg" title="Bike Seats" alt="Amazing seats">
-                        <div class="left__box_overlay">
-                            <a href="#" class="left__box_overlay_bg hidden">x</a>
-                            <a href="#" class="left__box_overlay_title">Amazing seats</a>
-                        </div>
-                    </div>
-                    <div class="columns__left_box2">
-                        <img class="left__box_img" src="img/ph2m.jpg" title="Seats types" alt="Custom seats">
-                        <div class="left__box_overlay">
-                            <a href="#" class="left__box_overlay_bg hidden">x</a>
-                            <a href="#" class="left__box_overlay_title">Custom seats</a>
-                        </div>
-                    </div>
-                    <div class="columns__left_box3">
-                        <img class="left__box_img" src="img/ph3m.jpg" title="Limited edition" alt="Limited edition">
-                        <div class="left__box_overlay">
-                            <a href="#" class="left__box_overlay_bg hidden">x</a>
-                            <a href="#" class="left__box_overlay_title">Limited edition</a>
-                        </div>
-                    </div>
-                </div>
+    <!--            <div class="columns__left clearfix">-->
+    <!--                <div class="columns__left_box1">-->
+    <!--                    <img class="left__box_img" src="img/ph1m.jpg" title="Bike Seats" alt="Amazing seats">-->
+    <!--                    <div class="left__box_overlay">-->
+    <!--                        <a href="#" class="left__box_overlay_bg hidden">x</a>-->
+    <!--                        <a href="#" class="left__box_overlay_title">Amazing seats</a>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="columns__left_box2">-->
+    <!--                    <img class="left__box_img" src="img/ph2m.jpg" title="Seats types" alt="Custom seats">-->
+    <!--                    <div class="left__box_overlay">-->
+    <!--                        <a href="#" class="left__box_overlay_bg hidden">x</a>-->
+    <!--                        <a href="#" class="left__box_overlay_title">Custom seats</a>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="columns__left_box3">-->
+    <!--                    <img class="left__box_img" src="img/ph3m.jpg" title="Limited edition" alt="Limited edition">-->
+    <!--                    <div class="left__box_overlay">-->
+    <!--                        <a href="#" class="left__box_overlay_bg hidden">x</a>-->
+    <!--                        <a href="#" class="left__box_overlay_title">Limited edition</a>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
             
-                <div class="columns__mid clearfix">
+    <!--            <div class="columns__mid clearfix">-->
                     
-                    <div class="columns__mid_box1">
-                        <img class="mid__box_img" src="img/ph4m.jpg" title="Shop bags" alt="Suitable bags">
-                        <div class="mid__box_overlay">
-                            <a href="#" class="mid__box_overlay_bg hidden">x</a>
-                            <a href="#" class="mid__box_overlay_title">Shop bags</a>
-                        </div>
-                    </div>
-                    <div class="columns__mid_box2">
-                        <img class="mid__box_img" src="img/ph5m.jpg" title="Shop bikes" alt="Vintage bikes">
-                        <div class="mid__box_overlay">
-                            <a href="#" class="mid__box_overlay_bg hidden">x</a>
-                            <a href="#" class="mid__box_overlay_title">Shop bikes</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="columns__right clearfix">
-                    <div class="columns__right_box1">
-                        <img class="right__box_img" src="img/ph6m.jpg" title="Shop now" alt="Best shopping">
-                        <div class="right__box_overlay">
-                            <a href="#" class="right__box_overlay_bg hidden">x</a>
-                            <a href="#" class="right__box_overlay_title">Shop now</a>
-                        </div>
-                    </div>
-                    <div class="columns__right_box2">
-                        <img class="right__box_img" src="img/ph7m.jpg" title="Shop seats" alt="Shop seats">
-                        <div class="right__box_overlay">
-                            <a href="#" class="right__box_overlay_bg hidden">x</a>
-                            <a href="#" class="right__box_overlay_title">Shop seats</a>
-                        </div>
-                    </div>
-                    <div class="columns__right_box3">
-                        <img class="right__box_img" src="img/ph8m.jpg" title="Shop accessories" alt="Shop accessories">
-                        <div class="right__box_overlay">
-                            <a href="#" class="right__box_overlay_bg hidden">x</a>
-                            <a href="#" class="right__box_overlay_title">Shop accessories</a>
-                        </div>
-                    </div>
-                </div>
+    <!--                <div class="columns__mid_box1">-->
+    <!--                    <img class="mid__box_img" src="img/ph4m.jpg" title="Shop bags" alt="Suitable bags">-->
+    <!--                    <div class="mid__box_overlay">-->
+    <!--                        <a href="#" class="mid__box_overlay_bg hidden">x</a>-->
+    <!--                        <a href="#" class="mid__box_overlay_title">Shop bags</a>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="columns__mid_box2">-->
+    <!--                    <img class="mid__box_img" src="img/ph5m.jpg" title="Shop bikes" alt="Vintage bikes">-->
+    <!--                    <div class="mid__box_overlay">-->
+    <!--                        <a href="#" class="mid__box_overlay_bg hidden">x</a>-->
+    <!--                        <a href="#" class="mid__box_overlay_title">Shop bikes</a>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="columns__right clearfix">-->
+    <!--                <div class="columns__right_box1">-->
+    <!--                    <img class="right__box_img" src="img/ph6m.jpg" title="Shop now" alt="Best shopping">-->
+    <!--                    <div class="right__box_overlay">-->
+    <!--                        <a href="#" class="right__box_overlay_bg hidden">x</a>-->
+    <!--                        <a href="#" class="right__box_overlay_title">Shop now</a>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="columns__right_box2">-->
+    <!--                    <img class="right__box_img" src="img/ph7m.jpg" title="Shop seats" alt="Shop seats">-->
+    <!--                    <div class="right__box_overlay">-->
+    <!--                        <a href="#" class="right__box_overlay_bg hidden">x</a>-->
+    <!--                        <a href="#" class="right__box_overlay_title">Shop seats</a>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="columns__right_box3">-->
+    <!--                    <img class="right__box_img" src="img/ph8m.jpg" title="Shop accessories" alt="Shop accessories">-->
+    <!--                    <div class="right__box_overlay">-->
+    <!--                        <a href="#" class="right__box_overlay_bg hidden">x</a>-->
+    <!--                        <a href="#" class="right__box_overlay_title">Shop accessories</a>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
                 
-            </div> <!-- columns -->
+    <!--        </div> <!-- columns -->
         <!--</div>-->
-    </section> <!-- shop -->
+    <!--</section> <!-- shop -->
 
     <section class="vintage-bicycle-gallery">
     </section>
     
-    <section class="discover">
+    
+    <section id="discover" class="discover">
         <div class="container">
             <div class="discover__item">
                 <a class="discover__link" href="#">Discover the shop</a>
             </div>
         </div>
     </section> <!-- discover -->
+    
+    <!--<section class="search">-->
+    <!--    <div class="container container__search">-->
+    <!--        <h2 class="logo"><a href="#" title="home" alt="Logo">AOD</a></h2>-->
+    <!--        <h3 class="logo__header">Stay on the saddle!</h3>-->
+    <!--        <form name="search__form">-->
+    <!--            <input type="text" name="search" class="search__form_input" placeholder="find your item" form="data" required>-->
+    <!--            <button type="submit" class="search__form_btn" value="search">Search items</button>-->
+    <!--        </form>-->
+    <!--    </div> <!-- container -->
+    <!--</section> <!-- search -->
+    
+    <section class="vintage-bicycle-gallery"></section>
     
     <section class="search">
         <div class="container container__search">
@@ -234,7 +249,7 @@
         </div> <!-- container -->
     </section> <!-- search -->
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="container container__footer">
             <div class="contacts">
                 <h3 class="contacts__name">AOD New York</h3>
@@ -244,10 +259,10 @@
             <div class="socmedia">
                 <ul class="socmedia__list">
                     <li class="socmedia__item">
-                        <a href="#" class="socmedia__link socmedia__link_facebook"></a>
+                        <a href="#" class="socmedia__link socmedia__link_twitter"></a>
                     </li>
                     <li class="socmedia__item">
-                        <a href="#" class="socmedia__link socmedia__link_twitter"></a>
+                        <a href="#" class="socmedia__link socmedia__link_facebook"></a>
                     </li>
                     <li class="socmedia__item">
                         <a href="#" class="socmedia__link socmedia__link_pintrest"></a>

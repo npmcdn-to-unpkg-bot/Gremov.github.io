@@ -128,7 +128,7 @@ MENU
 
 .menu {
     border-top: 1px solid #cacbcb;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #000000;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#373737+0,303030+100 */
     background: rgb(55,55,55); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%); /* FF3.6+ */
@@ -192,8 +192,9 @@ MENU
     top: 100%;
 }
 
-.menu ul li {
+.menu-active ul li {
     background: #303030;
+    position: relative;
     width: 150px;
     -webkit-box-shadow: 1px 10px 14px 2px rgba(0,0,0,0.69);
     -moz-box-shadow: 1px 10px 14px 2px rgba(0,0,0,0.69);
