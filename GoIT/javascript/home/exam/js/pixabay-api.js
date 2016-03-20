@@ -1,5 +1,5 @@
-var takeImages = 9;
-var takeSliders = 10;
+var takeImages = 7;
+var takeSliders = 4;
 var perPageCount = 30;
 var perPageSlidesCount = 40;
 var API_KEY = '2217298-38addbee8ad85b3796d49a68a';
@@ -47,8 +47,9 @@ function fillRandomImages(images){
         var currImage = images.hits[imageIndex];
         var itemClassName = '';
         var imgClassName = 'item-img';
-        if(i == 4 || i == 9){ itemClassName = 'grid-item--width2'; imgClassName = 'item-img-grid-item--width2'; }
-        var imageData = { url: currImage.webformatURL, className: itemClassName, imageClassName: imgClassName };
+        var imgCaption = currImage.tags;
+        if(i == 2 || i == 5){ itemClassName = 'grid-item--width2'; imgClassName = 'item-img-grid-item--width2'; }
+        var imageData = { url: currImage.webformatURL, className: itemClassName, imageClassName: imgClassName, imageCaption: imgCaption };
         vintageBicycleGallery.push(imageData);
     }
 }
