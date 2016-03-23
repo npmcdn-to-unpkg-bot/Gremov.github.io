@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     compass = require('gulp-compass'),
     spritesmith = require('gulp.spritesmith'),
+    uglify = require('gulp-uglify'),
 	  minifyCSS = require('gulp-minify-css');
 	  
 	  
@@ -52,3 +53,18 @@ gulp.task('sprite', function () {
   }));
   return spriteData.pipe(gulp.dest('sprites/'));
 });
+
+gulp.task('gulp-uglify', function() {
+  return gulp.src('js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('build/js'))
+});
+
+// gulp.task('minify', function(){
+//     gulp.src('/js/*.js')
+//         .pipe(concat('all.js'))
+//         .pipe(gulp.dest('./dist'))
+//         .pipe(rename('all.min.js'))
+//         .pipe(uglify())
+//         .pipe(gulp.dest('build/js'));
+// });

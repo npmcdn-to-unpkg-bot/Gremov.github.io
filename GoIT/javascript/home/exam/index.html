@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <title>Gennadii Remizov | FE developper Project-exam</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bundle.min.css">
     <link rel="stylesheet" href="css/bundle2.min.css">
     <link rel="icon" type="image/png" href="../exam/img/favicon-ico.png" sizes="32x32" />
     <link rel="shortcut icon" type="image/png" href="../exam/img/favicon-ico.png" sizes="32x32" />
@@ -36,7 +34,7 @@
                     <span class="third"></span>
                 </label>
 
-                <ul class="menu menu__mobile">
+                <ul class="menu menu__mobile clearfix">
 
                     <li class="menu__item">
                         <a class="menu__link" href="#chain-section">About</a>
@@ -48,7 +46,7 @@
                         <a class="menu__link" href="#treadle-section">Cycling</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#discover">Shop</a>
+                        <a class="menu__link menu__link-shift" href="#discover">Shop</a>
                     </li>
                     <li class="menu__item dot">
                         <a class="menu__link" href="#">.</a>
@@ -144,82 +142,8 @@
     <section class="slider" id="main__slider">
     </section> <!-- slider -->
     
-    <!--<section class="shop">-->
-        <!--<div class="container">-->
-    <!--        <div class="columns">-->
-                
-    <!--            <div class="columns__left clearfix">-->
-    <!--                <div class="columns__left_box1">-->
-    <!--                    <img class="left__box_img" src="img/ph1m.jpg" title="Bike Seats" alt="Amazing seats">-->
-    <!--                    <div class="left__box_overlay">-->
-    <!--                        <a href="#" class="left__box_overlay_bg hidden">x</a>-->
-    <!--                        <a href="#" class="left__box_overlay_title">Amazing seats</a>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <div class="columns__left_box2">-->
-    <!--                    <img class="left__box_img" src="img/ph2m.jpg" title="Seats types" alt="Custom seats">-->
-    <!--                    <div class="left__box_overlay">-->
-    <!--                        <a href="#" class="left__box_overlay_bg hidden">x</a>-->
-    <!--                        <a href="#" class="left__box_overlay_title">Custom seats</a>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <div class="columns__left_box3">-->
-    <!--                    <img class="left__box_img" src="img/ph3m.jpg" title="Limited edition" alt="Limited edition">-->
-    <!--                    <div class="left__box_overlay">-->
-    <!--                        <a href="#" class="left__box_overlay_bg hidden">x</a>-->
-    <!--                        <a href="#" class="left__box_overlay_title">Limited edition</a>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-            
-    <!--            <div class="columns__mid clearfix">-->
-                    
-    <!--                <div class="columns__mid_box1">-->
-    <!--                    <img class="mid__box_img" src="img/ph4m.jpg" title="Shop bags" alt="Suitable bags">-->
-    <!--                    <div class="mid__box_overlay">-->
-    <!--                        <a href="#" class="mid__box_overlay_bg hidden">x</a>-->
-    <!--                        <a href="#" class="mid__box_overlay_title">Shop bags</a>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <div class="columns__mid_box2">-->
-    <!--                    <img class="mid__box_img" src="img/ph5m.jpg" title="Shop bikes" alt="Vintage bikes">-->
-    <!--                    <div class="mid__box_overlay">-->
-    <!--                        <a href="#" class="mid__box_overlay_bg hidden">x</a>-->
-    <!--                        <a href="#" class="mid__box_overlay_title">Shop bikes</a>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="columns__right clearfix">-->
-    <!--                <div class="columns__right_box1">-->
-    <!--                    <img class="right__box_img" src="img/ph6m.jpg" title="Shop now" alt="Best shopping">-->
-    <!--                    <div class="right__box_overlay">-->
-    <!--                        <a href="#" class="right__box_overlay_bg hidden">x</a>-->
-    <!--                        <a href="#" class="right__box_overlay_title">Shop now</a>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <div class="columns__right_box2">-->
-    <!--                    <img class="right__box_img" src="img/ph7m.jpg" title="Shop seats" alt="Shop seats">-->
-    <!--                    <div class="right__box_overlay">-->
-    <!--                        <a href="#" class="right__box_overlay_bg hidden">x</a>-->
-    <!--                        <a href="#" class="right__box_overlay_title">Shop seats</a>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <div class="columns__right_box3">-->
-    <!--                    <img class="right__box_img" src="img/ph8m.jpg" title="Shop accessories" alt="Shop accessories">-->
-    <!--                    <div class="right__box_overlay">-->
-    <!--                        <a href="#" class="right__box_overlay_bg hidden">x</a>-->
-    <!--                        <a href="#" class="right__box_overlay_title">Shop accessories</a>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-                
-    <!--        </div> <!-- columns -->
-        <!--</div>-->
-    <!--</section> <!-- shop -->
-
     <section class="vintage-bicycle-gallery">
     </section>
-    
     
     <section id="discover" class="discover">
         <div class="container">
@@ -228,31 +152,20 @@
             </div>
         </div>
     </section> <!-- discover -->
-    
-    <!--<section class="search">-->
-    <!--    <div class="container container__search">-->
-    <!--        <h2 class="logo"><a href="#" title="home" alt="Logo">AOD</a></h2>-->
-    <!--        <h3 class="logo__header">Stay on the saddle!</h3>-->
-    <!--        <form name="search__form">-->
-    <!--            <input type="text" name="search" class="search__form_input" placeholder="find your item" form="data" required>-->
-    <!--            <button type="submit" class="search__form_btn" value="search">Search items</button>-->
-    <!--        </form>-->
-    <!--    </div> <!-- container -->
-    <!--</section> <!-- search -->
-    
+
     <section class="vintage-bicycle-gallery"></section>
     
     <section class="search">
-        <div class="container container__search">
+        <div class="container container__search clearfix">
             <h2 class="logo"><a href="#" title="home" alt="Logo">AOD</a></h2>
             <h3 class="logo__header">Stay on the saddle!</h3>
-                <input type="text" name="search" class="search__form_input" placeholder="find your item">
-                <button type="button" onclick="getDataByQuery()" class="search__form_btn" value="search">Search items</button>
+            <input type="text" name="search" class="search__form_input" placeholder="find your item">
+            <button type="button" onclick="getDataByQuery()" class="search__form_btn" value="search">Search items</button>
         </div> <!-- container -->
     </section> <!-- search -->
 
     <footer id="footer" class="footer">
-        <div class="container container__footer">
+        <div class="container container__footer clearfix">
             <div class="contacts">
                 <h3 class="contacts__name">AOD New York</h3>
                 <h4 class="contacts__address">2250 Lexington Avenue</h4> 
