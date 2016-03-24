@@ -1,1 +1,8 @@
-function getDataByQuery(){removeGallery();var e=document.getElementsByClassName("search__form_input")[0],a=e.value,l=getData(getUrlForImages(a),"");fillRandomImages(l),addGallery()}
+function getDataByQuery(){
+    removeGallery();
+    var searchInput = document.getElementsByClassName("search__form_input")[0];
+    var query = searchInput.value;
+    var pixabayImagesByQuery = getData(getUrlForImages(query),'');
+    fillRandomImages(pixabayImagesByQuery);
+    addGallery();
+}

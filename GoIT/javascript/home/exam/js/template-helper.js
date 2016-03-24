@@ -1,1 +1,89 @@
-function Gallery(e){function t(){return i||l(),i}function l(){var t=e.template({images:e.images});i=document.createElement("div"),i.innerHTML=t,i.classList.add("vintage-bicycle-gallery-container")}var i;this.getElem=t}function SliderModel(e){function t(){return i||l(),i}function l(){var t=e.template({slides:e.slides});i=document.createElement("div"),i.innerHTML=t,i.classList.add("slider-layout")}var i;this.getElem=t}function addGallery(){var e=_.template(document.getElementById("vintage-bicycle-gallery-template").innerHTML),t=new Gallery({template:e,images:vintageBicycleGallery}),l=document.getElementsByClassName("vintage-bicycle-gallery")[0];l.appendChild(t.getElem()),$(".grid").masonry({itemSelector:".grid-item",columnWidth:250,fitWidth:!0})}function addSlider(){var e=_.template(document.getElementById("slider-images-template").innerHTML),t=new SliderModel({template:e,slides:bikeSliders}),l=document.getElementsByClassName("slider")[0];l.appendChild(t.getElem())}function removeGallery(){vintageBicycleGallery=[];var e=document.getElementsByClassName("vintage-bicycle-gallery")[0];$(e).empty()}function removeSlider(){bikeSliders=[];var e=document.getElementsByClassName("slider")[0];$(e).empty()}!function(){addGallery(),addSlider()}();
+function Gallery(options) {
+    var elem;
+
+    function getElem() {
+        if (!elem) render();
+        return elem;
+    }
+
+    function render() {
+        var html = options.template({
+            images: options.images
+        });
+
+        elem = document.createElement('div');
+        elem.innerHTML = html;
+        elem.classList.add("vintage-bicycle-gallery-container");
+    }
+
+    this.getElem = getElem;
+}
+
+function SliderModel(options) {
+    var elem;
+
+    function getElem() {
+        if (!elem) render();
+        return elem;
+    }
+
+    function render() {
+        var html = options.template({
+            slides: options.slides
+        });
+
+        elem = document.createElement('div');
+        elem.innerHTML = html;
+        elem.classList.add("slider-layout");
+    }
+
+    this.getElem = getElem;
+}
+
+function addGallery(){
+    var tmpl = _.template(document.getElementById('vintage-bicycle-gallery-template').innerHTML);
+    var gallery = new Gallery({
+        template: tmpl,
+        images: vintageBicycleGallery
+    });
+
+    var galleryContainer = document.getElementsByClassName("vintage-bicycle-gallery")[0];
+
+    galleryContainer.appendChild(gallery.getElem());
+
+    $('.grid').masonry({
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 250,
+        fitWidth: true
+    });
+}
+
+function addSlider(){
+    var tmpl = _.template(document.getElementById('slider-images-template').innerHTML);
+    var sliderModel = new SliderModel({
+        template: tmpl,
+        slides: bikeSliders
+    });
+
+    var sliderContainer = document.getElementsByClassName("slider")[0];
+
+    sliderContainer.appendChild(sliderModel.getElem());
+}
+
+function removeGallery(){
+    vintageBicycleGallery = [];
+    var gallery = document.getElementsByClassName("vintage-bicycle-gallery")[0];
+    $(gallery).empty();
+}
+
+function removeSlider(){
+    bikeSliders = [];
+    var slider = document.getElementsByClassName("slider")[0];
+    $(slider).empty();
+}
+
+(function () {
+    addGallery();
+    addSlider();
+})();

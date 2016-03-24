@@ -1012,8 +1012,8 @@ body {
 .item-img-grid-item--width2 {
     display: block;
     
-    width: 250px;
-    height: 306px;
+    width: 240px;
+    height: 307px;
     
     margin: 0 auto;
 }
@@ -1375,7 +1375,7 @@ body {
     
     .item-img-grid-item--width2 {
         display: inline-block;
-        width: 480px;
+        width: 490px;
         height: 307px;
     }
     
@@ -1559,7 +1559,7 @@ body {
                GRID-section
     *********************************/
     .grid {
-        width: 500px;
+        width: 480px;
         margin: 0 auto;
     }
     
@@ -1587,7 +1587,7 @@ body {
     
     .item-img-grid-item--width2 {
         display: inline-block;
-        width: 480px;
+        width: 490px;
         height: 307px;
     }
     
