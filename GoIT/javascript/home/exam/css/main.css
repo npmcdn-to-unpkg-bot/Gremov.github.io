@@ -1624,7 +1624,7 @@ body {
     .photo__5 {
         position: relative;
         
-        background: url(../img/photo_5m.jpg) top center no-repeat;
+        background: url(../img/photo_5.png) top center no-repeat;
         -webkit-background-size: cover;
            -moz-background-size: cover;
              -o-background-size: cover;
