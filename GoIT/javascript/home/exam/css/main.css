@@ -634,7 +634,7 @@ body {
     border: none;
     display: block;
     
-    width: 30px;
+    width: 31px;
     height: 42px;
     
     cursor: pointer;
@@ -1128,6 +1128,10 @@ body {
     .hidden__menu:checked ~ .btn-menu span.third {
         -webkit-transform: rotate(-45deg);
         top: -0.625em;
+    }
+    
+    .slider .container {
+         min-width: 15em;
     }
 
 }
