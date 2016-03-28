@@ -1503,7 +1503,7 @@ body {
     .container {
         margin: 0 auto;
         
-        min-width: 47.2em;
+        min-width: 57em;
         width: 55%;
         
         position: relative;
@@ -1555,7 +1555,7 @@ body {
     .menu__mobile .empty {
         display: inline-block;
         
-        padding: 0 6em;
+        padding: 0 10em;
     }
     
     .menu__link:hover::after {
