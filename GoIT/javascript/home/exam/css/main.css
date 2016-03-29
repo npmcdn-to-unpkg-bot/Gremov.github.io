@@ -575,43 +575,43 @@ body {
             transition: opacity .5s linear;
 }
 
-/*.slider__caption {*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
+.slider__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     
-/*    width: 30%;*/
-/*    height: 30%;*/
+    width: 30%;
+    height: 30%;
     
-/*    padding: 1em;*/
-/*    margin: -1em 0 0 -15%;*/
+    padding: 1em;
+    margin: -1em 0 0 -15%;
     
-/*    background: rgba( 0, 0, 0, .7 );*/
+    background: rgba( 0, 0, 0, .7 );
     
-/*    color: #ffffff;*/
+    color: #ffffff;
     
-/*    text-align: center;*/
-/*    text-transform: uppercase;*/
+    text-align: center;
+    text-transform: uppercase;
     
-/*    -webkit-transform: scale( 0 );*/
-/*       -moz-transform: scale( 0 );*/
-/*        -ms-transform: scale( 0 );*/
-/*         -o-transform: scale( 0 );*/
-/*            transform: scale( 0 );*/
+    -webkit-transform: scale( 0 );
+       -moz-transform: scale( 0 );
+        -ms-transform: scale( 0 );
+         -o-transform: scale( 0 );
+            transform: scale( 0 );
     
-/*    -webkit-transition: all .5s linear;*/
-/*       -moz-transition: all .5s linear;*/
-/*         -o-transition: all .5s linear;*/
-/*            transition: all .5s linear;*/
-/*}*/
+    -webkit-transition: all .5s linear;
+       -moz-transition: all .5s linear;
+         -o-transition: all .5s linear;
+            transition: all .5s linear;
+}
 
-/*.slide-caption .visible {*/
-/*    -webkit-transform: scale( 1 );*/
-/*       -moz-transform: scale( 1 );*/
-/*        -ms-transform: scale( 1 );*/
-/*         -o-transform: scale( 1 );*/
-/*            transform: scale( 1 );*/
-/*}*/
+.slide-caption .visible {
+    -webkit-transform: scale( 1 );
+       -moz-transform: scale( 1 );
+        -ms-transform: scale( 1 );
+         -o-transform: scale( 1 );
+            transform: scale( 1 );
+}
 
 .slider__img:first-child {
     opacity: 1;
@@ -1013,11 +1013,6 @@ body {
 
 .grid-item,
 .grid-item--width2 {
-    width: 100%;
-}
-
-.item-img,
-.item-img-grid-item--width2 {
     display: block;
     
     width: 240px;
@@ -1025,6 +1020,16 @@ body {
     
     margin: 0 auto;
 }
+
+/*.item-img,*/
+/*.item-img-grid-item--width2 {*/
+/*    display: block;*/
+    
+/*    width: 240px;*/
+/*    height: 307px;*/
+    
+/*    margin: 0 auto;*/
+/*}*/
 
 
 
@@ -1261,14 +1266,6 @@ body {
     }
     
     .grid-item {
-        width: 240px;
-    }
-    
-    .grid-item--width2 {
-        width: 490px;
-    }
-    
-    .item-img {
         display: inline-block;
         
         width: 240px;
@@ -1277,11 +1274,26 @@ body {
         margin: 0 auto;
     }
     
-    .item-img-grid-item--width2 {
+    .grid-item--width2 {
         display: inline-block;
         width: 490px;
         height: 307px;
     }
+    
+    /*.item-img {*/
+    /*    display: inline-block;*/
+        
+    /*    width: 240px;*/
+    /*    height: 307px;*/
+        
+    /*    margin: 0 auto;*/
+    /*}*/
+    
+    /*.item-img-grid-item--width2 {*/
+    /*    display: inline-block;*/
+    /*    width: 490px;*/
+    /*    height: 307px;*/
+    /*}*/
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -1389,25 +1401,30 @@ body {
     }
     
     .grid-item {
-        width: 240px;
-    }
-    
-    .grid-item--width2 {
-        width: 480px;
-    }
-    
-    .item-img {
         display: inline-block;
         width: 240px;
         height: 307px;
         margin: 0 auto;
     }
     
-    .item-img-grid-item--width2 {
+    .grid-item--width2 {
         display: inline-block;
         width: 490px;
         height: 307px;
     }
+    
+    /*.item-img {*/
+    /*    display: inline-block;*/
+    /*    width: 240px;*/
+    /*    height: 307px;*/
+    /*    margin: 0 auto;*/
+    /*}*/
+    
+    /*.item-img-grid-item--width2 {*/
+    /*    display: inline-block;*/
+    /*    width: 490px;*/
+    /*    height: 307px;*/
+    /*}*/
     
     
     /*********************************
@@ -1716,25 +1733,30 @@ body {
     }
     
     .grid-item {
-        width: 240px;
-    }
-    
-    .grid-item--width2 {
-        width: 480px;
-    }
-    
-    .item-img {
         display: inline-block;
         width: 240px;
         height: 307px;
         margin: 0 auto;
     }
     
-    .item-img-grid-item--width2 {
+    .grid-item--width2 {
         display: inline-block;
         width: 490px;
         height: 307px;
     }
+    
+    /*.item-img {*/
+    /*    display: inline-block;*/
+    /*    width: 240px;*/
+    /*    height: 307px;*/
+    /*    margin: 0 auto;*/
+    /*}*/
+    
+    /*.item-img-grid-item--width2 {*/
+    /*    display: inline-block;*/
+    /*    width: 490px;*/
+    /*    height: 307px;*/
+    /*}*/
     
     /*********************************
                FOOTER

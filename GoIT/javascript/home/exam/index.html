@@ -200,7 +200,7 @@
     <script type="text/template" id="vintage-bicycle-gallery-template">
         <div class="grid">
             <% images.forEach(function(image) { %>
-            <div class="grid-item <%-image.className%>"><img class="<%-image.imageClassName%>" src="<%-image.url%>" /></div>
+            <div class="grid-item <%-image.className%>" style="background: url(<%-image.url%>) no-repeat 100% 100%; background-size: cover;"></div>
             <% }); %>
         </div>
     </script>
@@ -214,7 +214,7 @@
                     <% slides.forEach(function(slide) { %>
                     <li class="slider__item clearfix">
                         <img class="slider__img" id="slider__img_<%-slide.imageNumber%>" data-image="<%-slide.imageUrl%>" alt="">
-                        // <p class="slider__caption <%-slide.imageVisibleClass%>">Caption <%-slide.imageNumber%></p>
+                        <p class="slider__caption <%-slide.imageVisibleClass%>">Caption <%-slide.imageNumber%></p>
                     </li>
                     <% }); %>
                 </ul>
