@@ -47,9 +47,9 @@ function fillRandomImages(images){
         var currImage = images.hits[imageIndex];
         var itemClassName = '';
         var imgClassName = 'item-img';
-        var imgCaption = currImage.tags;
+        // var imgCaption = currImage.tags;
         if(i == 2 || i == 5){ itemClassName = 'grid-item--width2'; imgClassName = 'item-img-grid-item--width2'; }
-        var imageData = { url: currImage.webformatURL, className: itemClassName, imageClassName: imgClassName, imageCaption: imgCaption };
+        var imageData = { url: currImage.webformatURL, className: itemClassName, imageClassName: imgClassName, };
         vintageBicycleGallery.push(imageData);
     }
 }
