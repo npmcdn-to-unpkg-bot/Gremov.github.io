@@ -200,7 +200,7 @@
     <script type="text/template" id="vintage-bicycle-gallery-template">
         <div class="grid">
             <% images.forEach(function(image) { %>
-            <div class="grid-item <%-image.className%>" style="background: url(<%-image.url%>) no-repeat 100% 100%; background-size: cover;"></div>
+            <div class="grid-item <%-image.className%>" style="<%-image.imageBackground%>"></div>
             <% }); %>
         </div>
     </script>

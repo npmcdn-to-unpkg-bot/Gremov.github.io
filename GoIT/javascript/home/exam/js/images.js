@@ -6,3 +6,16 @@ function getDataByQuery(){
     fillRandomImages(pixabayImagesByQuery);
     addGallery();
 }
+
+var searchInput = document.getElementsByClassName("search__form_input")[0];
+
+searchInput.onkeypress = pressed;
+
+function pressed(e) {
+
+    key = e.keyCode || e.which;
+
+    if(key == 13) {
+        getDataByQuery();
+    }
+}

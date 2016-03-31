@@ -47,9 +47,10 @@ function fillRandomImages(images){
         var currImage = images.hits[imageIndex];
         var itemClassName = '';
         var imgClassName = 'item-img';
+        var imageBackground = "background: url('" + currImage.webformatURL + "') no-repeat 100% 100%; background-size: cover;"
         // var imgCaption = currImage.tags;
         if(i == 2 || i == 5){ itemClassName = 'grid-item--width2'; imgClassName = 'item-img-grid-item--width2'; }
-        var imageData = { url: currImage.webformatURL, className: itemClassName, imageClassName: imgClassName, };
+        var imageData = { url: currImage.webformatURL, className: itemClassName, imageClassName: imgClassName, imageBackground: imageBackground };
         vintageBicycleGallery.push(imageData);
     }
 }
