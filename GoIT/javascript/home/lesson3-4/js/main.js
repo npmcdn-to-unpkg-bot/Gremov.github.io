@@ -43,7 +43,7 @@ var app = {
                 
           for (var j = 0; j < responseCount; j ++) {
               
-                var label = this.createElement({
+                this.createElement({
                     tagName: 'label',
                     className: 'response',
                     idName: 'answers',
@@ -51,7 +51,7 @@ var app = {
                     parentElement: form
                 });
                 
-               var checkbox = this.createElement({
+               this.createElement({
                     tagName: 'input',
                     className: 'box',
                     inputType: 'checkbox',

@@ -68,15 +68,15 @@ function fillRandomSlides(slides){
     }
 }
 
-function getUrlForImages(query){
+function getUrlForImages(query) {
     return "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(query)+"&per_page="+perPageCount;
 }
 
-function getUrlForSlides(query){
+function getUrlForSlides(query) {
     return "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(query)+"&per_page="+perPageSlidesCount;
 }
 
-function getDefaultSearchUrl(){
+function getDefaultSearchUrl() {
     return getUrlForImages('vintage bike');
 }
 
