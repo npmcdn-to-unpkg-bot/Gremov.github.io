@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gennadii Remizov | FE dev Domino</title>
+    <link rel="stylesheet" href="dist/css/main.min.css">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.js"></script>
+    <!--<script src="js/new.js"></script>-->
+    <!--<script src="js/transform.js"></script>-->
+    <!--<script src="js/size.js"></script>-->
+    <script src="dist/js/main.min.js"></script>
+</head>
+<body>
+    
+    <div class="container clearfix">
+        <header class="header">
+            <div class="controls">
+                <a href="#" class="controls__left" title="Counter-clockwise rotation"></a>
+                <a href="#" class="controls__center" onclick="createNewDomino()" title="New Domino">new</a>
+                <a href="#" class="controls__right" title="Clockwise rotation"></a>
+            </div>
+        </header>
+        
+        <section class="templates clearfix">
+                <ul>
+                    <li class="templates__item1">
+                        <ul class="templates__list-item1">
+                            <li class="templates__subitem"></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="templates__item2">
+                        <ul class="templates__list-item2">
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                        </ul>
+                    </li>
+                    <li class="templates__item3">
+                        <ul class="templates__list-item3">
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                        </ul>
+                    </li>
+                    <li class="templates__item4">
+                        <ul class="templates__list-item4">
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                        </ul>
+                    </li>
+                    <li class="templates__item5">
+                        <ul  class="templates__list-item5">
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                        </ul>
+                    </li>
+                    <li class="templates__item6">
+                        <ul  class="templates__list-item6">
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                            <li class="templates__subitem"></li>
+                        </ul>
+                    </li>
+                </ul>
+        </section>
+        
+            
+        <section id="domino" class="templates domino">
+            <div class="domino-box">
+                <div class="domino__top-part">
+                </div> <!-- domino__top-part -->
+
+                <div class="domino__bottom-part">
+                </div> <!-- domino__bottom-part -->
+            </div> <!-- domino-box -->
+        </section>
+        <section class="setup">
+            <p>size<input type="range" id="size" min="1" max="6" step="1"  
+                onchange="sizeDomino()" value="2"></p>
+            <p>speed<input type="range" id="speed" min="1" max="8" step="1"  
+                value="6"></p>
+        </section>
+        <input type="hidden" id="topElementNumber" name="topElementNumber" value="1">
+        <input type="hidden" id="bottomElementNumber" name="bottomElementNumber" value="4">
+    </div> <!-- container -->
+</body>
+</html>

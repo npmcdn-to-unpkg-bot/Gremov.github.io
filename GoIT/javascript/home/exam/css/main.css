@@ -72,7 +72,7 @@ body {
     text-transform: uppercase;
 }
 
- /* add a empty string after the elment with class .menu__link */
+ /* add a empty string after the element with class .menu__link */
 .menu__link:after {
     content: '';
     display: block;
@@ -85,7 +85,7 @@ body {
        -moz-transition: width .5s ease, background-color .5s ease;
             transition: width .5s ease, background-color .5s ease;
 
-    margin: auto; /* center the cotent so it will sliding from the midddle to the left and right */
+    margin: auto; /* center the content so it will sliding from the middle to the left and right */
 }
 
 /* Change the width and background on hover, aka sliding from the middle to the left and right */
@@ -1024,9 +1024,9 @@ body {
 
 
 @media only screen and (max-width: 499px) {
-     /*********************************
-                HEADER
-     *********************************/
+/*********************************
+            HEADER
+*********************************/
     .menu__mobile .dot,
     .menu__mobile .empty {
         display: none;
