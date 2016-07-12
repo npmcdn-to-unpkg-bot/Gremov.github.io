@@ -8,7 +8,7 @@ var defaultBottomElementNumber = 4;
 //     $(parentElement).wrap(childElement.innerHTML);
 // }
 
-function createDominoElement(parentElementSelector, childElementSelector){
+function createDominoElement(parentElementSelector, childElementSelector) {
     var parentElement = $(parentElementSelector);
     var childElement = $(childElementSelector).html();
     parentElement.empty();

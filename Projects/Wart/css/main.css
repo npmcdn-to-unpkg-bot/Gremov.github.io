@@ -1,0 +1,252 @@
+/*********************************
+        GENERAL
+*********************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    
+    text-decoration: none;
+}
+
+body {
+    background: #ffffff;
+}
+
+.container {
+    position: relative;
+
+    height: 500px;
+    
+    background: rgba(0, 0, 0, .9);
+    background-size: 100%;
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    width: 100%;
+}
+
+.field {
+    width: 62.5em;
+    height: 31.25em;
+    
+    position: absolute;
+    
+    
+    background: url(../img/ua_map.png) no-repeat center center;
+    background-size: 85%; 
+
+    top: 50%;
+    left: 50%;
+    
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.field-item {
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+    
+    border-radius: 100%;
+}
+
+.field-item:first-child {
+    background: #FFFF00;
+
+    top: 30%;
+    left: 16%;
+}
+
+.field-item:nth-of-type(2) {
+    background: #FFFFFF;
+
+    bottom: 32%;
+    left: 53%;
+}
+
+.field-item:nth-of-type(3) {
+    background: #FFFFFF;
+
+    top: 45%;
+    right: 15%;
+}
+
+.field-item:last-child {
+    background: #FFFFFF;
+
+    bottom: 16%;
+    right: 20%;
+}
+
+.field-text {
+    display: none;
+
+    position: absolute;
+    
+    left: -15px;
+    bottom: 20px;
+    
+    width: 40px;
+    
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: .75em;
+    line-height: 1.25em;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.field-item:hover .field-text {
+    display: inline-block;
+}
+
+
+
+/*********************************
+        ANIMATION-PULSE
+*********************************/
+.field-link {
+    position: relative;
+    
+    bottom: 10px;
+    right: 10px;
+    
+    width: 30px;
+    height: 30px;
+    
+    background-size: 100% 100%;
+    
+    border-radius: 15px;
+    
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .4), 0 0 4px 1px rgba(0, 0, 0, .2), 
+    inset 0 1px 1px 0 rgba(255, 255, 255, .2), inset 0 2px 4px 1px rgba(255, 255 ,255, .1);
+}
+
+.circle-base {
+    display: none;
+    
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 25px;
+    
+    opacity: 0;
+    
+    z-index: 10;
+    box-shadow: 0 0 1px 1px #E5E500, inset 0 0 1px 1px #E5E500;
+    
+    -webkit-animation: ring 2s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.circle-base-white {
+    display: none;
+    
+    box-shadow: 0 0 2px 1px #D8D8D8, inset 0 0 2px 1px #D8D8D8;
+    
+    -webkit-animation: ring 2s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.field-link-pulse {
+    display: none;
+    
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 25px;
+    
+    background: #E5E500;
+    
+    -webkit-animation: pulsating 2s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0;
+    
+    z-index: 5;
+}
+
+.field-link-pulse-white {
+    background: #A0A0A0;
+}
+
+/*.field-item:hover .circle-base,*/
+/*.field-item:hover .circle-base-white,*/
+/*.field-item:hover .field-link-pulse,*/
+/*.field-item:hover .field-link-pulse-white {*/
+/*    display: inline-block;*/
+/*}*/
+
+@-webkit-keyframes pulsating {
+    0% {opacity: 0;}
+    50% {opacity: .2;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes ring {
+    0% {-webkit-transform: scale(.4, .4); opacity: 0;}
+    50% {opacity: .6;}
+    100% {-webkit-transform: scale(1.1, 1.1); opacity: 0;}
+}
+
+
+
+/*********************************
+        ANIMATION-CURVE LINE
+*********************************/
+.field-scenario1:nth-of-type(2),
+.field-scenario2DA {
+    display: none;
+    
+    stroke-dasharray: 2%;
+    stroke-dashoffset: 1000;
+    animation: dash 2s linear forwards;
+}
+
+.field-scenario1,
+.field-scenario2BA,
+.field-scenario2CA {
+    display: none;
+    
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 3s linear forwards;
+}
+ 
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash2 {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
